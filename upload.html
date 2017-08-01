@@ -11,12 +11,38 @@
     <legend>Pet Information</legend>
     Pet Name:<br>
     <input type="text" name="petname"><br>
+    
+    <select name="pets">Pet Types
+      <option value="cat">Cat</option>
+      <option value="dog">Dog</option>
+      <option value="hamster">Hamster</option>
+      <option value="reptile">Reptile</option>
+      <option value="rabbbit">Rabbit</option>
+      <option value="other">Other</option>
 
     <input type="radio" name="sex" value="male" checked>Male<br>
     <input type="radio" name="sex" value="female" checked>Female<br>
+      
+    <input type="checkbox" name="attribute1" value="house-trained">House-Trained<br>
+    <input type="checkbox" name="attribute2" value="hypoallergenic">Hypoallergenic<br>
+    <input type="checkbox" name="attribute3" value="family_friendly">Family Friendly<br>
+    <input type="checkbox" name="attribute4" value="sterile">Spayed/Neutered<br>
+      
+    <textarea name="message" rows="15" cols="100">Pet Description
+      Please enter a thorough description of the animal available for adoption.
+    </textarea>
 
     <input type="submit" value="Submit">
+    <input type="reset">
   </fieldset>
+    
+  <fieldset>
+    <legend>Contact Information</legend>
+    E-mail:
+    <input type="email" name="email">
+    Phone Number:
+    <input type="tel" name="usrtel">
+    </fieldset>
   
   </form>
   
