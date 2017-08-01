@@ -10,7 +10,8 @@ body {font-family: helvetica,sans-serif;margin:0}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 500px;
+  max-width: 1000px;
+  position: relative;
   margin: auto;
 }
 
@@ -86,8 +87,7 @@ button {
 <body>
 <h1>The <em>"Purr"</em>fect Pet <em>"Paw"</em>ject</h1>
   
-  <center><button><a href="upload.html" class="button">Upload a Pet</a></button></center>
-  <center><button><a href="questions.html" class="button">Find a Pet</a></button></center>
+  
 
   <div class="slideshow-container">
 
@@ -116,7 +116,10 @@ button {
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
-
+  <div>
+<center><button><a href="upload.html" class="button">Upload a Pet</a></button></center>
+  <center><button><a href="questions.html" class="button">Find a Pet</a></button></center>
+  </div>
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
