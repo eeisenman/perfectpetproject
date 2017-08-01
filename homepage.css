@@ -1,6 +1,9 @@
 body.double {border-style: double;}
 h1 {text-align: center;
 }
+a {
+  text-align: center;
+}
 * {box-sizing:border-box}
 
 /* Slideshow container */
