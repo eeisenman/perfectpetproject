@@ -64,5 +64,5 @@ for (h = 0; h < name.length; h++;
             "<li> Age: " + age[i] + "</li>" + "<br>"
             "<li> Breed: " + breed[j] + "/li>" + "<br>"
             "<li>" + randomNeutered + "</li>" + "<br>"
-            "<li> Personality: " + personality[k] + "</li>" + "<br>"     
-}
+            "<li> Personality: " + personality[k] + "</li>" + "<br>"}   
+
