@@ -2,9 +2,23 @@
 <html>
 <body>
 
-<h1>My First Heading</h1>
+<h1>Upload Animal Information</h1>
 
-<p>My first paragraph.</p>
+<p>Please enter as much information as possible. The more info, the better the chances of finding a new home.</p>
 
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Pet Information</legend>
+    Pet Name:<br>
+    <input type="text" name="petname"><br>
+
+    <input type="radio" name="sex" value="male" checked>Male<br>
+    <input type="radio" name="sex" value="female" checked>Female<br>
+
+    <input type="submit" value="Submit">
+  </fieldset>
+  
+  </form>
+  
 </body>
 </html>
