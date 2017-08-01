@@ -1,3 +1,4 @@
+console.log("loading");
 var name = [
   "Bubbles",
   "Buttercup",
