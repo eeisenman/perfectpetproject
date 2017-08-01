@@ -69,3 +69,4 @@ for (h = 0; h < name.length; h++;
 }   
 ];
 
+console.log(generator); 
