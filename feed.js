@@ -1,43 +1,25 @@
 var name = [
-  "Pepper", 
-  "Monte", 
-  "Pom Pom",
   "Bubbles",
-  "Blossom",
   "Buttercup",
-  "Lucky",
-  "Money", 
-  "Rhino", 
-  "Penny", 
   "Fluffy",
   "Bear", 
   "Flash",
   "Fawn",
   "Bolt",
   "Woody",
-  "Boo", 
-  "Duke", 
-  "Dolly",
   "Milo" ]; 
   
-  
-
+var gender = ["female", "male"]; 
 
 var age = [
   "3 weeks",
-  "2 months",
-  "3 months",
   "6 months",
-  "1 year old",
   "2 years old",
   "3 years old",
   "4 years old",
   "6 years old", 
-  "7 years old", 
-  "8 years old",
   "9 years old",
   "10 years old", 
-  "11 years old", 
   "12 years old"];
 
 var breed = [
@@ -49,14 +31,7 @@ var breed = [
   "Labrador", 
   "Pug", 
   "Labrador Retriever", 
-  "Beagle",
-  "German Shepard", 
-  "Shih Tzu",
-  "Bulldog", 
-  "Great Dane", 
-  "Pomeranian"]; 
-
-var gender = ["female", "male"]; 
+  "Beagle"]; 
 
 var neutered = ["neutered", "not neutered"] 
 
@@ -68,8 +43,26 @@ var personality = [
   "loyal, confident", 
   "shy, quiet"
   "protective, alpha" 
-  "playful, kid friendly" ]; 
+  "playful, kid friendly"
+  "cheeky, funny"]; 
 
+var h = 0;
+var i = 0;
+var j= 0;
+var k= 0; 
 
+var randomGender = gender[Math.floor(Math.random() * gender.length)];
+var randomNeutered = neutered[Math.floor(Math.random() * neutered.length)];
 
- 
+for (h = 0; h < name.length; h++;) { 
+    text += "<li> Name: " + name[h] + "</li>" +  "<br>" + 
+            "<li>" randomGender "</li> + "<br>" + 
+            "<li> Age: " + age[i] + "</li>" + "<br>" +
+            "<li> Breed: " + breed[j] + "/li>" + "<br>" +
+            "<li>" + randomNeutered + "</li>" + "<br>" +
+            "<li> Personality: " + personality[k] + "</li>" + "<br>"; 
+            
+    i+=1; i < age.length;
+    j+=1; j < breed.length;
+    k+=1; k < personality. length; 
+}
