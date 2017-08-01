@@ -42,9 +42,9 @@ var personality = [
   "calm, mellow", 
   "outgoing, friendly", 
   "loyal, confident", 
-  "shy, quiet"
-  "protective, alpha" 
-  "playful, kid friendly"
+  "shy, quiet",
+  "protective, alpha",
+  "playful, kid friendly",
   "cheeky, funny"]; 
 
 var h = 0;
