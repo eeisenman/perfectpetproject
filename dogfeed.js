@@ -14,14 +14,14 @@ var nick = [
 var gender = ["female", "male"]; 
 
 var age = [
-  "3 weeks",
-  "6 months",
-  "2 years old",
+  "7 months",
+  "5 weeks",
+  "1 year old",
   "3 years old",
   "4 years old",
   "4 years old", 
   "3 years old",
-  "10 months", 
+  "6 years old", 
   "5 years old"];
 
 var breed = [
@@ -32,7 +32,7 @@ var breed = [
   "Husky",
   "Labrador", 
   "Pug", 
-  "Labrador Retriever", 
+  "Golden Retriever", 
   "Beagle"]; 
 
 var text = "<ul>";
@@ -51,7 +51,15 @@ var personality = [
   "cheeky, funny"]; 
 
 var photo = [
-  "corgi.jpeg"]; 
+  "unknowndog.jpeg",
+  "mixdog.jpeg",
+  "corgi.jpeg",
+  "samoyed.jpeg",
+  "husky.jpeg",
+  "lab.jpeg",
+  "pug.jpeg",
+  "goldie.jpeg",
+  "beagle.jpeg"]; 
 
   
   
