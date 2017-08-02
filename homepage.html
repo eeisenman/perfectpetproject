@@ -84,7 +84,7 @@ body {
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-.button1, .button2{
+.button1 {
   font-family: helvetica;
   text-decoration: none;
   color: black;
@@ -98,10 +98,28 @@ body {
   width: 50%;
   border-radius: 4px;
   transition: all 0.5s;
+  margin-right: 2px;
+  }
+  .button2 {
+    font-family: helvetica;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border: 2px solid #555555;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 28px;
+  padding: 20px;
+  text-align: center;
+  width: 50%;
+  border-radius: 4px;
+  transition: all 0.5s;
+  margin-left: 2px;
   }
   .button1, .button2:hover{
     background-color: #555555;
     color: white;
+    }
 h1 {
   text-align:center;
   font-size: 64px;
@@ -122,7 +140,6 @@ h1 {
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
   <img src="img3.jpg" style="width:100%">
 
 </div>
