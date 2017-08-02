@@ -1,9 +1,7 @@
 console.log("loading");
 var name = [
-  "Bubbles",
-  "Buttercup",
-  "Fluffy",
-  "Pepper", 
+  "Kiwi",
+  "Tofu", 
   "Teddy",
   "Bub",
   "Boots",
