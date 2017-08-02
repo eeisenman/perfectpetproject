@@ -1,14 +1,14 @@
 console.log("loading");
 var name = [
   "Oscar",
-  "Buttercup",
-  "Fluffy",
+  "Kai",
+  "Dale",
   "Tiger", 
   "Simba",
   "Poppy",
   "Lucy",
   "Misty",
-  "Milo" ]; 
+  "Jade" ]; 
   
 var gender = ["female", "male"]; 
 
