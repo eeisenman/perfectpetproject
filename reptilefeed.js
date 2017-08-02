@@ -1,5 +1,5 @@
 console.log("loading");
-var name = [
+var nick = [
   "Oatmeal",
   "Ollie",
   "Duke",
@@ -34,6 +34,8 @@ var species = [
   "Turtle", 
   "Turtle"]; 
 
+var text = "<ul>";
+
 var neutered = ["neutered", "not neutered"] 
 
 var personality = [ 
@@ -65,6 +67,8 @@ for (h = 0, i=0, j=0, k=0; h < name.length && i < age.length && j < breed.length
             "<li>" + randomNeutered + "</li>" + "<br>"
             "<li> Personality: " + personality[k] + "</li>" + "<br>";
 }   
+
+text+= "</ul>";
 
 console.log(text); 
 
