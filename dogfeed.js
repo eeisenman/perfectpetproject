@@ -19,10 +19,10 @@ var age = [
   "2 years old",
   "3 years old",
   "4 years old",
-  "6 years old", 
-  "9 years old",
-  "10 years old", 
-  "12 years old"];
+  "4 years old", 
+  "3 years old",
+  "10 months", 
+  "5 years old"];
 
 var breed = [
   "unknown",
