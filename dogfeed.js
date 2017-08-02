@@ -85,5 +85,8 @@ var randomNeutered = neutered[Math.floor(Math.random() * neutered.length)];
 }   
 text+= "</ul>";
 
+document.getElementById("dogData").innerHTML = text;
+
+
 console.log(text); 
 
