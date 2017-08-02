@@ -54,7 +54,7 @@ var photo = [
   "unknowndog.jpeg",
   "mixdog.jpg",
   "corgi.jpg",
-  "samo.jpg",
+  "samoyed.jpg",
   "husky.jpeg",
   "lab.jpeg",
   "pug.jpeg",
