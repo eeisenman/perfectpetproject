@@ -1,13 +1,13 @@
 console.log("loading");
 var name = [
-  "Bubbles",
+  "Oscar",
   "Buttercup",
   "Fluffy",
-  "Bear", 
-  "Flash",
-  "Fawn",
-  "Bolt",
-  "Woody",
+  "Tiger", 
+  "Simba",
+  "Poppy",
+  "Lucy",
+  "Misty",
   "Milo" ]; 
   
 var gender = ["female", "male"]; 
