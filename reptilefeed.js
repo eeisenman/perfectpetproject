@@ -4,7 +4,7 @@ var nick = [
   "Ollie",
   "Duke",
   "Bear", 
-  "Dolly",
+  "Kippling",
   "Luna",
   "Coco",
   "Woody",
