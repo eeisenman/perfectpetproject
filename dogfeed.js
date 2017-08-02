@@ -1,4 +1,5 @@
 console.log("loading");
+var text = "<ul>";
 var name = [
   "Bubbles",
   "Buttercup",
@@ -65,6 +66,7 @@ for (h = 0, i=0, j=0, k=0; h < name.length && i < age.length && j < breed.length
             "<li>" + randomNeutered + "</li>" + "<br>" +
             "<li> Personality: " + personality[k] + "</li>" + "<br>";
 }   
+</ul>
 
 console.log(text); 
 
