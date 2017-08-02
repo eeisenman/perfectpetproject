@@ -1,5 +1,5 @@
 console.log("loading");
-var name = [
+var nick = [
   "Kiwi",
   "Tofu", 
   "Teddy",
@@ -59,10 +59,10 @@ for (h = 0, i=0, j=0, k=0; h < name.length && i < age.length && j < breed.length
 
   
     text += "<li> Name: " + breed[h] + "</li>" +  "<br>" 
-            "<li>" randomGender "</li>" + "<br>"
-            "<li> Age: " + age[i] + "</li>" + "<br>"
-            "<li> Breed: " + breed[j] + "/li>" + "<br>"
-            "<li>" + randomNeutered + "</li>" + "<br>"
+            "<li>" randomGender "</li>" + "<br>"+
+            "<li> Age: " + age[i] + "</li>" + "<br>"+
+            "<li> Breed: " + breed[j] + "</li>" + "<br>"+
+            "<li>" + randomNeutered + "</li>" + "<br>"+
             "<li> Personality: " + personality[k] + "</li>" + "<br>";
 }   
  
