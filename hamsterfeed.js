@@ -1,7 +1,7 @@
 console.log("loading");
 var nick = [
   "Kiwi",
-  "Tofu", 
+  "Whiskers", 
   "Teddy",
   "Bub",
   "Boots",
