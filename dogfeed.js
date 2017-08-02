@@ -61,7 +61,7 @@ var randomNeutered = neutered[Math.floor(Math.random() * neutered.length)];
 for (h = 0, i=0, j=0, k=0; h < name.length && i < age.length && j < breed.length && k < personality.length ; h++, i++, j++, k++){
 
   
-    text += "<li> Name: " + name[h] + "</li>" +  "<br>" +
+    text += "<li> Name: " + breed[h] + "</li>" +  "<br>" +
             "<li>" + randomGender + " </li>" + "<br>" +
             "<li> Age: " + age[i] + "</li>" + "<br>" +
             "<li> Breed: " + breed[j] + "</li>" + "<br>" +
