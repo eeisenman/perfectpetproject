@@ -4,49 +4,68 @@
   
 <body style="background-color:gainsboro;">
 
-<h1>Upload Animal Information</h1>
+<h1>The Purrfect Pet Questionnaire</h1>
 
-<p>Please enter as much information as possible. The more info, the better the chances of finding a new home.</p>
-
-<form action="/action_page.php">
-  <fieldset>
-    <legend>Pet Information</legend>
-    Pet Name:<br>
-    <input type="text" name="petname"><br>
+<p>Check the boxes to select characteristics of your purrfect pet. The more boxes you check, the higher the chance of finding 
+your purrfect pet. The less boxes you check, the lower the chance of finding your purrfect pet.</p>
     
-    <select name="pets">Pet Types
-      <option value="cat">Cat</option>
-      <option value="dog">Dog</option>
-      <option value="hamster">Hamster</option>
-      <option value="reptile">Reptile</option>
-      <option value="rabbbit">Rabbit</option>
-      <option value="other">Other</option><br>
+  <p1>Type of Pet:</p1>
+    <form action="/action_page.php">
+    <input type="checkbox" name="pet1" value="Dog">Dog
+    <br>
+    <input type="checkbox" name="pet2" value="Cat">Cat 
+    <br><br>
+    <input type="checkbox" name="pet3" value="Rabbit">Rabbit
+    <br><br><br>
+    <input type="checkbox" name="pet4" value="Hamster">Hamster
+    <br><br><br><br>
+    <input type="checkbox" name="pet5" value="Reptile">Reptile
+    <br><br><br><br><br>
+    </form> 
+  
+  <p2>Gender:</p2>
 
-    <input type="radio" name="sex" value="male" checked>Male<br>
-    <input type="radio" name="sex" value="female" checked>Female<br>
-      
-    <input type="checkbox" name="attribute1" value="house-trained"> House-Trained<br>
-    <input type="checkbox" name="attribute2" value="hypoallergenic"> Hypoallergenic<br>
-    <input type="checkbox" name="attribute3" value="family_friendly"> Family Friendly<br>
-    <input type="checkbox" name="attribute4" value="sterile"> Spayed/Neutered<br>
-      
-    <textarea name="message" rows="15" cols="100">Pet Description
-      Please enter a thorough description of the animal available for adoption.
-    </textarea>
-
+    <form action="/action_page.php">
+    <input type="checkbox" name="gender1" value="Male">Male
+    <br>
+    <input type="checkbox" name="gender2" value="Female">Female 
+    <br><br>
+    </form>
+  
+  <p3>Neuter:</p3>
+  
+  <form action="/action_page.php">
+    <input type="checkbox" name="neutered1" value="neutered">Yes
+    <br>
+    <input type="checkbox" name="neutered2" value="notneutered">No
+    <br><br>
+    </form>
+  
+  <p4>Age Range:</p4>
+   
+  <form action="/action_page.php">
+    <input type="checkbox" name="age1" value="low">Young/Newborn
+    <br>
+    <input type="checkbox" name="age2" value="medium">Middle-Aged
+    <br><br>
+    <input type="checkbox" name="age3" value="high">Elderly/Old
+    <br><br><br>
+    </form>
+  
+  <p5>Size:</p5>
+  
+  <form action="/action_page.php">
+    <input type="checkbox" name="size1" value="small">Small/Toy
+    <br>
+    <input type="checkbox" name="size2" value="average">Medium
+    <br><br>
+    <input type="checkbox" name="size3" value="big">Big/Large
+    <br><br><br>
+    </form>
+  
     <input type="submit" value="Submit">
     <input type="reset">
   </fieldset>
-    
-  <fieldset>
-    <legend>Contact Information</legend>
-    Name:
-    <input type="text" name="name"><br>
-    E-mail:
-    <input type="email" name="email"><br>
-    Phone Number:
-    <input type="tel" name="usrtel">
-    </fieldset>
   
   </form>
   
