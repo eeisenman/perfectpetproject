@@ -5,13 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing:border-box}
-body {
-  font-family: helvetica;
-  sans-serif;
-  margin:0;
-  bordee-style: double;
-  border-width: 4px;
-  }
+  
+<!--FOR SLIDESHOW-->
 .mySlides {display:none}
 
 /* Slideshow container */
@@ -19,47 +14,6 @@ body {
   max-width: 1000px;
   position: relative;
   margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-.dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
 }
 
 /* Fading animation */
@@ -84,52 +38,26 @@ body {
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-button1 {
+ <!--ACTUAL HTML-->
+  
+ body {
   font-family: helvetica;
-  text-decoration: none;
-  color: black;
-  background-color: white;
-  border: 2px solid #555555;
-  display: inline-block;
-  cursor: pointer;
-  font-size: 28px;
-  padding: 20px;
-  text-align: center;
-  width: 50%;
-  border-radius: 4px;
-  transition: all 0.5s;
-  margin-right: 2px;
-  float:right;
-  }
-  button2 {
-    font-family: helvetica;
-  text-decoration: none;
-  color: black;
-  background-color: white;
-  border: 2px solid #555555;
-  display: inline-block;
-  cursor: pointer;
-  font-size: 28px;
-  padding: 20px;
-  text-align: center;
-  width: 50%;
-  border-radius: 4px;
-  transition: all 0.5s;
-  margin-left: 2px;
-    float:left;
-  }
-  button1, button2:hover{
-    background-color: #555555;
-    color: white;
-    }
+  sans-serif;
+  margin:0;
+  border-style: double;
+  border-width: 4px;
+  }  
 h1 {
   text-align:center;
   font-size: 64px;
+  border-style: double;
+  border-width: 2px;
   }
  
 </style>
 </head>
 <body>
+  
 <h1>The <em>"Purr"</em>fect Pet <em>"Paw"</em>ject</h1>
  
   <div class="slideshow-container">
@@ -146,13 +74,6 @@ h1 {
   <img src="img3.jpg" style="width:100%">
 </div>
 <br>
-
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
-
 <script>
 var slideIndex = 0;
 showSlides();
@@ -174,6 +95,8 @@ function showSlides() {
     setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
-
+    
+<a href="upload.html" class="button1">Upload a Pet</a>
+ <a href="questions.html" class="button2">Find a Pet</a>
 </body>
 </html> 
