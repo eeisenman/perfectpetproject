@@ -76,7 +76,7 @@ var randomNeutered = neutered[Math.floor(Math.random() * neutered.length)];
 for (g = 0, h = 0, i=0, j=0, k=0; g < photo.length && h < nick.length && i < age.length && j < breed.length && k < personality.length ; g++, h++, i++, j++, k++){
 
   
-    text += "<img src =\"" + photo[g] + "\" width:50% height: 50% />" + "<br>" +
+    text += "<img src =\"" + photo[g] + "\" />" + "<br>" +
             "<li> Name: " + nick[h] + "</li>" +  "<br>" +
             "<li>" + randomGender + " </li>" + "<br>" +
             "<li> Age: " + age[i] + "</li>" + "<br>" +
