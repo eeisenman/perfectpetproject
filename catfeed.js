@@ -26,13 +26,13 @@ var age = [
 var breed = [
   "unknown",
   "mix",
-  "Corgi",
-  "Chihuahua", 
-  "Husky",
-  "Labrador", 
-  "Pug", 
+  "Siamese",
+  "Persian", 
+  "British Shorthair",
+  "Maine Coon", 
+  "American Shorthair", 
   "Labrador Retriever", 
-  "Beagle"]; 
+  "Bombay"]; 
 
 var neutered = ["neutered", "not neutered"] 
 
