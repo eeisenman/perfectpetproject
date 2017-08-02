@@ -6,13 +6,13 @@
 
 <p>Please enter as much information as possible. The more info, the better the chances of finding a new home.</p>
   
-<form id="pets">
+<form>
   <fieldset>
     <legend>Pet Information</legend>
     Pet Name:<br>
-    <input type="text" name="petname"><br>
+    <input id="name" type="text" name="petname"><br>
     
-    <select name="pets">Pet Types
+    <select id="petTypes" name="pets">Pet Types
       <option value="cat">Cat</option>
       <option value="dog">Dog</option>
       <option value="hamster">Hamster</option>
@@ -20,16 +20,30 @@
       <option value="rabbbit">Rabbit</option>
       <option value="other">Other</option><br>
 
-    <input type="radio" name="sex" value="male" checked>Male<br>
-    <input type="radio" name="sex" value="female" checked>Female<br>
+    <select id="gender" name="sex">Sex
+      <option value="male">Male</option>
+      <option value="female">Female</option><br>
       
-    <input type="checkbox" name="attribute1" value="house-trained">House-Trained<br>
-    <input type="checkbox" name="attribute2" value="hypoallergenic">Hypoallergenic<br>
-    <input type="checkbox" name="attribute3" value="family_friendly">Family Friendly<br>
-    <input type="checkbox" name="attribute4" value="sterile">Spayed/Neutered<br>
+    <select id="allergies" name="hypoallergenic">Hypoallergenic
+      <option value="yes">Yes</option>
+      <option value="no">No</option><br>
       
-    <textarea name="message" rows="15" cols="100">Pet Description
+    <select id="houseTrained" name="house-trained">House-Trained
+      <option value="yes">Yes</option>
+      <option value="no">No</option><br>
+      
+    <select id="friendly" name="familyFriendly">Family Friendly
+      <option value="yes">Yes</option>
+      <option value="no">No</option><br>
+      
+    <select id="barren" name="infertile">Spayed/Neutered
+      <option value="yes">Yes</option>
+      <option value="no">No</option><br>
+                             
+      
+    <textarea id="description" name="message" rows="15" cols="100">Pet Description
     </textarea>
+    
     <button type="button" onclick="myFunction()">Submit</button>
     
     <button type="button">Reset</button>
@@ -49,10 +63,21 @@
   </form>
   <script>
 function myFunction() {
-    var x = document.getElementById("pets");
-    var text = "";
-    var i;
-    for (i = 0; i < x.length ;i++) {
+  var = myData {};
+  var a = document.getElementById("name");
+  var b = document.getElementById("petTypes");
+  var c = document.getElementById("gender");
+  var d = document.getElementById("allergies")
+  var e = document.getElementById("checkbox2")
+  
+  var f = document.getElementById("checkbox3")
+  
+  var g = document.getElementById("checkbox4")
+  
+  var h = document.getElementById("description");
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
         text += x.elements[i].value + "<br>";
     }
   console.log(text);
