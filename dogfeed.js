@@ -1,6 +1,6 @@
 console.log("loading");
 
-var name = [
+var nick = [
   "Bubbleeeeee",
   "Buttercup",
   "Fluffy",
@@ -58,10 +58,10 @@ var k= 0;
 var randomGender = gender[Math.floor(Math.random() * gender.length)];
 var randomNeutered = neutered[Math.floor(Math.random() * neutered.length)];
 
-for (h = 0, i=0, j=0, k=0; h < name.length && i < age.length && j < breed.length && k < personality.length ; h++, i++, j++, k++){
+for (h = 0, i=0, j=0, k=0; h < nick.length && i < age.length && j < breed.length && k < personality.length ; h++, i++, j++, k++){
 
   
-    text += "<li> Name: " + breed[h] + "</li>" +  "<br>" +
+    text += "<li> Name: " + nick[h] + "</li>" +  "<br>" +
             "<li>" + randomGender + " </li>" + "<br>" +
             "<li> Age: " + age[i] + "</li>" + "<br>" +
             "<li> Breed: " + breed[j] + "</li>" + "<br>" +
