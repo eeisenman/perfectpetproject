@@ -14,14 +14,14 @@ var gender = ["female", "male"];
 
 var age = [
   "3 weeks",
+  "1 month",
+  "3 months",
   "6 months",
+  "1 years old",
+  "1.5 years old", 
   "2 years old",
-  "3 years old",
-  "4 years old",
-  "6 years old", 
-  "9 years old",
-  "10 years old", 
-  "12 years old"];
+  "2.5 years old", 
+  "3 years old"];
 
 var breed = [
   "unknown",
