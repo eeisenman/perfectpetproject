@@ -34,6 +34,8 @@ var breed = [
   "European", 
   "Turkish"]; 
 
+var text = "<ul>";
+
 var neutered = ["neutered", "not neutered"] 
 
 var personality = [ 
