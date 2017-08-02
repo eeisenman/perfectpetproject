@@ -11,63 +11,122 @@
     
   <p1><b>Type of Pet:</b></p1>
     <form action="/action_page.php">
-    <input type="checkbox" name="pet1" value="Dog">Dog
+    <input id= "dogcheckbox" type="checkbox" name="pet1" value="Dog">Dog
     <br>
-    <input type="checkbox" name="pet2" value="Cat">Cat 
+    <input id= "catcheckbox"type="checkbox" name="pet2" value="Cat">Cat 
     <br>
-    <input type="checkbox" name="pet3" value="Rabbit">Rabbit
+    <input id= "rabbitcheckbox"type="checkbox" name="pet3" value="Rabbit">Rabbit
     <br>
-    <input type="checkbox" name="pet4" value="Hamster">Hamster
+    <input id= "hamstercheckbox"type="checkbox" name="pet4" value="Hamster">Hamster
     <br>
-    <input type="checkbox" name="pet5" value="Reptile">Reptile
+    <input id= "reptilecheckbox"type="checkbox" name="pet5" value="Reptile">Reptile
     <br><br>
     </form> 
   
   <p2><b>Gender:</b></p2>
 
     <form action="/action_page.php">
-    <input type="checkbox" name="gender1" value="Male">Male
+    <input id= "malecheckbox" type="checkbox" name="gender1" value="Male">Male
     <br>
-    <input type="checkbox" name="gender2" value="Female">Female 
+    <input id= "femalecheckbox" type="checkbox" name="gender2" value="Female">Female 
     <br><br>
     </form>
   
   <p3><b>Neuter:</b></p3>
   
   <form action="/action_page.php">
-    <input type="checkbox" name="neutered1" value="neutered">Yes
+    <input id= "neuteredcheckbox" type="checkbox" name="neutered1" value="neutered">Yes
     <br>
-    <input type="checkbox" name="neutered2" value="notneutered">No
+    <input id= "notneuteredcheckbox" type="checkbox" name="neutered2" value="notneutered">No
     <br><br>
     </form>
   
   <p4><b>Age Range:</b></p4>
    
   <form action="/action_page.php">
-    <input type="checkbox" name="age1" value="low">Young/Newborn
+    <input id= "newborncheckbox" type="checkbox" name="age1" value="low">Young/Newborn
     <br>
-    <input type="checkbox" name="age2" value="medium">Middle-Aged
+    <input id= "middlecheckbox" type="checkbox" name="age2" value="medium">Middle-Aged
     <br>
-    <input type="checkbox" name="age3" value="high">Elderly/Old
+    <input id= "oldcheckbox" type="checkbox" name="age3" value="high">Elderly/Old
     <br><br>
     </form>
   
   <p5><b>Size:</b></p5>
   
   <form action="/action_page.php">
-    <input type="checkbox" name="size1" value="small">Small/Toy
+    <input id= "smallcheckbox" type="checkbox" name="size1" value="small">Small/Toy
     <br>
-    <input type="checkbox" name="size2" value="average">Medium
+    <input id= "mediumcheckbox" type="checkbox" name="size2" value="average">Medium
     <br>
-    <input type="checkbox" name="size3" value="big">Big/Large
+    <input id= "largecheckbox" type="checkbox" name="size3" value="big">Big/Large
     <br><br>
     </form>
   
-    <input type="submit" value="Submit">
+    <button onclick= "myFunction()"> type="submit" value="Submit">
     <input type="reset">
   </fieldset>
   
   </form>
   
+  <script>
+    function myFunction() {
+      var dogcheckbox = document.getElementById("dogcheckbox").value;
+      var catcheckbox = document.getElementById("catcheckbox").value;
+      var rabbitcheckbox = document.getElementById("rabbitcheckbox").value;
+      var hamstercheckbox = document.getElementById("hamstercheckbox").value;
+      var reptilecheckbox = document.getElementById("reptilecheckbox").value;
+      var malecheckbox = document.getElementById("malecheckbox").value;
+      var femalecheckbox = document.getElementById("femalecheckbox").value;
+      var neuteredheckbox = document.getElementById("neuteredcheckbox").value;
+      var notneuteredcheckbox = document.getElementById("notneuteredcheckbox").value;
+      var newborncheckbox = document.getElementById("newborncheckbox").value;
+      var middlecheckbox = document.getElementById("middlecheckbox").value;
+      var oldcheckbox = document.getElementById("oldcheckbox").value;
+      var smallcheckbox = document.getElementById("smallcheckbox").value;
+      var mediumcheckbox = document.getElementById("mediumcheckbox").value;
+      var largecheckbox = document.getElementById("largecheckbox").value;
+      
+      allPets = [
+ { 
+   "petName" : "Arthur",
+   "petType" : "dog",
+   "petGender" : "female",
+   "petNeuter" : "no",
+   "petAge" : 4,
+   "petSize" : "small"
+  } , 
+ { 
+   "petName" : "Candy",
+   "petType" : "dog",
+   "petGender" : "male",
+   "petNeuter" : "yes",
+   "petAge" : 10,
+   "petSize" : "small"
+  }
+];
+      
+      
+      
+      
+      
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </script>
 </body>
 </html>
