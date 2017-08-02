@@ -6,7 +6,9 @@ var name = [
   "Bub",
   "Boots",
   "Cheeky",
-  "Biscuit" ]; 
+  "Biscuit",
+  "Snuggles",
+  "Gem"]; 
   
 var gender = ["female", "male"]; 
 
