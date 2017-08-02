@@ -37,7 +37,7 @@ var breed = [
 
 var text = "<ul>";
 
-var neutered = ["neutered", "not neutered"] 
+var neutered = ["neutered", "unneutered"] 
 
 var personality = [ 
   "fun, energetic", 
@@ -70,11 +70,10 @@ var i = 0;
 var j= 0;
 var k= 0; 
 
-var randomGender = gender[Math.floor(Math.random() * gender.length)];
-var randomNeutered = neutered[Math.floor(Math.random() * neutered.length)];
-
 for (g = 0, h = 0, i=0, j=0, k=0; g < photo.length && h < nick.length && i < age.length && j < breed.length && k < personality.length ; g++, h++, i++, j++, k++){
 
+var randomGender = gender[Math.floor(Math.random() * gender.length)];
+var randomNeutered = neutered[Math.floor(Math.random() * neutered.length)];
   
     text += "<img src =\"" + photo[g] + "\" width:50% height: 50% />" + "<br>" +
             "<li> Name: " + nick[h] + "</li>" +  "<br>" +
