@@ -28,7 +28,7 @@ var breed = [
   "unknown",
   "mix",
   "Corgi",
-  "Chihuahua", 
+  "Samoyed", 
   "Husky",
   "Labrador", 
   "Pug", 
