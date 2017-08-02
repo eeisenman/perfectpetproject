@@ -3,12 +3,12 @@ var name = [
   "Bubbles",
   "Buttercup",
   "Fluffy",
-  "Bear", 
-  "Flash",
-  "Fawn",
-  "Bolt",
-  "Woody",
-  "Milo" ]; 
+  "Pepper", 
+  "Teddy",
+  "Bub",
+  "Boots",
+  "Cheeky",
+  "Biscuit" ]; 
   
 var gender = ["female", "male"]; 
 
