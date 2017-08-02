@@ -34,6 +34,8 @@ var breed = [
   "Labrador Retriever", 
   "Bombay"]; 
 
+var text = "<ul>";
+
 var neutered = ["neutered", "not neutered"] 
 
 var personality = [ 
