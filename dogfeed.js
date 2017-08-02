@@ -52,9 +52,9 @@ var personality = [
 
 var photo = [
   "unknowndog.jpeg",
-  "mixdog.jpeg",
-  "corgi.jpeg",
-  "samoyed.jpeg",
+  "mixdog.jpg",
+  "corgi.jpg",
+  "samoyed.jpg",
   "husky.jpeg",
   "lab.jpeg",
   "pug.jpeg",
