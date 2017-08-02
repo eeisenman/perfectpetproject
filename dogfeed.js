@@ -1,5 +1,5 @@
 console.log("loading");
-var text = "<ul>";
+
 var name = [
   "Bubbles",
   "Buttercup",
@@ -34,6 +34,8 @@ var breed = [
   "Pug", 
   "Labrador Retriever", 
   "Beagle"]; 
+
+var text = "<ul>";
 
 var neutered = ["neutered", "not neutered"] 
 
