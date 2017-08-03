@@ -1,4 +1,3 @@
-alert("Working"); 
 
 var dummyData = 
 [
@@ -193,6 +192,5 @@ var data = localStorage.getItem("testJSON");
 if (data == null) { 
   var myJSON = JSON.stringify(dummyData);
   localStorage.setItem("testJSON", myJSON);
-  alert(myJSON); 
 }
   
