@@ -10,7 +10,7 @@ for (i = 0; i < data.length; i++) {
             "<ul>" + "<p>" + petSize[i] + "<p>" + "</ul>" + "<br>" + 
             "<ul>" + "<p>" + extraOptions[i] + "<p>" + "</ul>" + "<br>" + 
             "<ul>" + "<img>" + photo[i] + "</img>" + "</ul>" + "<br>";
-      
+}
 
 
       
