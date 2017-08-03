@@ -9,7 +9,7 @@ var dummyData =
    "petSize" : "Medium", 
    "extraOptions" : [], 
    "photo" : "unknowndog.jpeg" 
-  }
+  },
   
   {"petName" : "Chewy and Bear", 
    "petType" : "Dog", 
@@ -19,7 +19,7 @@ var dummyData =
    "petSize" : "Small", 
    "extraOptions" : [], 
    "photo" : "mixdog.jpg" 
-  }
+  },
   
   {"petName" : "Mikey", 
    "petType" : "Dog", 
@@ -29,7 +29,7 @@ var dummyData =
    "petSize" : "Small", 
    "extraOptions" : [], 
    "photo" : "corgi.jpg" 
-  }
+  },
 
   {"petName" : "Flash", 
    "petType" : "Dog", 
@@ -39,7 +39,7 @@ var dummyData =
    "petSize" : "Large", 
    "extraOptions" : [], 
    "photo" : "samoyed.jpg" 
-  }
+  },
 
   {"petName" : "Woody and Buzz Lightyear", 
    "petType" : "Dog", 
@@ -49,7 +49,7 @@ var dummyData =
    "petSize" : "Large", 
    "extraOptions" : [], 
    "photo" : "husky.jpeg" 
-  }
+  },
 
   {"petName" : "Rocky", 
    "petType" : "Dog", 
@@ -59,7 +59,7 @@ var dummyData =
    "petSize" : "Large", 
    "extraOptions" : [], 
    "photo" : "lab.jpeg" 
-  }
+  },
 
 
   {"petName" : "Pumpkin", 
@@ -70,7 +70,7 @@ var dummyData =
    "petSize" : "Small", 
    "extraOptions" : [], 
    "photo" : "pug.jpeg" 
-  }
+  },
 
   {"petName" : "Max", 
    "petType" : "Dog", 
@@ -80,7 +80,7 @@ var dummyData =
    "petSize" : "Large", 
    "extraOptions" : [], 
    "photo" : "goldie.jpg" 
-  }
+  },
 
   {"petName" : "Fawn", 
    "petType" : "Dog", 
@@ -90,7 +90,7 @@ var dummyData =
    "petSize" : "Medium", 
    "extraOptions" : [], 
    "photo" : "beagle.jpeg" 
-  }
+  },
 
   {"petName" : "Briggy", 
    "petType" : "Cat", 
@@ -100,7 +100,7 @@ var dummyData =
    "petSize" : "Small", 
    "extraOptions" : [], 
    "photo" : "unknowncat.jpg" 
-  }
+  },
   
   {"petName" : "Oscar", 
    "petType" : "Cat", 
@@ -120,7 +120,7 @@ var dummyData =
    "petSize" : "Medium", 
    "extraOptions" : [], 
    "photo" : "siamese.jpg" 
-  }
+  },
 
   {"petName" : "Simba", 
    "petType" : "Cat", 
@@ -130,7 +130,7 @@ var dummyData =
    "petSize" : "Medium", 
    "extraOptions" : [], 
    "photo" : "persiancat.jpg" 
-  }
+  },
   
   {"petName" : "Jade", 
    "petType" : "Cat", 
@@ -140,7 +140,7 @@ var dummyData =
    "petSize" : "Medium", 
    "extraOptions" : [], 
    "photo" : "britcat.jpg" 
-  } 
+  },
 
   {"petName" : "Tiger", 
    "petType" : "Cat", 
@@ -150,7 +150,7 @@ var dummyData =
    "petSize" : "Medium", 
    "extraOptions" : [], 
    "photo" : "mainecat2.jpg" 
-  } 
+  },
 
   {"petName" : "Lucy", 
    "petType" : "Cat", 
@@ -160,7 +160,7 @@ var dummyData =
    "petSize" : "Medium", 
    "extraOptions" : [], 
    "photo" : "americancat.jpg" 
-  } 
+  },
 
   
   {"petName" : "Paris", 
@@ -171,7 +171,7 @@ var dummyData =
    "petSize" : "Large", 
    "extraOptions" : [], 
    "photo" : "persiancat2.jpg" 
-  } 
+  },
 
   {"petName" : "Luna", 
    "petType" : "Cat", 
@@ -186,9 +186,10 @@ var dummyData =
   
 ];
 
+if (JSON == null) { 
+  var myJSON = JSON.stringify(dummyData);
+  localStorage.setItem("testJSON", myJSON);
+  text = localStorage.getItem("testJSON"); 
 
-var myJSON = JSON.stringify(dummyData);
-localStorage.setItem("testJSON", myJSON);
-
-  
+}
   
