@@ -46,6 +46,8 @@
     </select><br>
     
     <h2>Optional Information</h2>
+    Pet Breed:<br>
+    <input id="breed" type="text" name="petBreed"><br>
     
     Hypoallergenic: <select id="allergies" name="hypoallergenic">
       <option value="Yes">Yes</option>
@@ -91,10 +93,11 @@ function myFunction() {
   var d = document.getElementById("barren").value;
   var e = document.getElementById("age").value;
   var f = document.getElementById("size").value;
-  var g = document.getElementById("allergies").value;
-  var h = document.getElementById("houseTrained").value;
-  var i = document.getElementById("friendly").value;
-  var j = document.getElementById("description").value;
+  var g = document.getElementById("breed").value;
+  var h = document.getElementById("allergies").value;
+  var i = document.getElementById("houseTrained").value;
+  var j = document.getElementById("friendly").value;
+  var k = document.getElementById("description").value;
   var text = "";
    
   console.log(myData);
