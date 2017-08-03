@@ -117,15 +117,15 @@
       }
    var inputs = document.getElementsByTagName('input');
 
-        listofCriteria = []
+        var listofCriteria = [];
       
 for(var i = 0; i < inputs.length; i++) {
   if (box.checked == true) {
-    listofCriteria.push(petlist)
+    listofCriteria.push(box.value); 
     
     
 }
-    
+ console.log(listofCriteria);   
 }
    
     
