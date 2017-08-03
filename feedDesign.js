@@ -1,12 +1,25 @@
+var data = localStorage.getItem("testJSON"); 
+
 for pet in data: 
-  var text = "<h1>" + petName + "</h1>" +
-             "<h2>" + petType + "</h2>"+ 
-             "<h2>" + petGender + "</h2>"+ 
-             "<h2>" + petNeuter + "</h2>"+ 
-             "<h2>" + petAge + "</h2>"+ 
-             "<h2>" + petSize + "</h2>"+ 
-             "<h2>" + extraOptions + "</h2>"+ 
+  var text = "<h2>" + petName + "</h2>" +
+             "<p>" + petType + "</p>"+ 
+             "<p>" + petGender + "</p>"+ 
+             "<p>" + petNeuter + "</p>"+ 
+             "<p>" + petAge + "</p>"+ 
+             "<p>" + petSize + "</p>"+ 
+             "<p>" + extraOptions + "</p>"+ 
              "<img>" + image + "</img>";
+
+for (i = 0; i < data.length; i++) { 
+    text += "<ul>" + "<h2>" + petName[i] + "<h2>" + "</ul>" + "<br>" + 
+            "<ul>" + "<p>" + petType[i] + "<p>" + "</ul>" + "<br>" + 
+            "<ul>" + "<p>" + petGender[i] + "<p>" + "</ul>" + "<br>" +   
+            "<ul>" + "<p>" + petNeuter[i] + "<p>" + "</ul>" + "<br>" + 
+            "<ul>" + "<p>" + petAge[i] + "<p>" + "</ul>" + "<br>" + 
+            "<ul>" + "<p>" + petSize[i] + "<p>" + "</ul>" + "<br>" + 
+            "<ul>" + "<p>" + extraOptions[i] + "<p>" + "</ul>" + "<br>" + 
+            "<ul>" + "<img>" + photo[i] + "</img>" + "</ul>" + "<br>";
+      
 
 
       
