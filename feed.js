@@ -186,10 +186,12 @@ var dummyData =
   
 ];
 
+var JSON = localStorage.getItem("testJSON"); 
+
+
 if (JSON == null) { 
   var myJSON = JSON.stringify(dummyData);
   localStorage.setItem("testJSON", myJSON);
-  text = localStorage.getItem("testJSON"); 
-
+  alert(myJSON); 
 }
   
