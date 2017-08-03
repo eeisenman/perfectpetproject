@@ -67,7 +67,7 @@
     <textarea id="description" name="message" rows="15" cols="100">Pet Description
     </textarea>
     
-    <button href=https://eeisenman.github.io/perfectpetproject/endpage.html type="submit" value="Submit" onclick="myFunction()">Submit</button>
+    <button type="submit" value="Submit" onclick="myFunction()">Submit</button>
     
   </fieldset>
     
@@ -127,6 +127,8 @@ localStorage.setItem("testJSON", myJSON);
 text = localStorage.getItem("testJSON");
 obj = JSON.parse(text);
   console.log(obj);
+  
+window.location = "https://eeisenman.github.io/perfectpetproject/endpage.html";
   
 }
 </script>
