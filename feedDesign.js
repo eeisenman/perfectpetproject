@@ -9,5 +9,5 @@ for (i = 0; i < data.length; i++) {
 
 text+= "</ul>";
 
-document.getElementById("feed").appendChild(text);
+document.getElementById('feed').innerHTML += text;
       
