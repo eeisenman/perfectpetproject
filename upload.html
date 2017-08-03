@@ -79,12 +79,21 @@ function myFunction() {
   var g = document.getElementById("barren");
   var h = document.getElementById("description");
   var text = "";
-  var i;
-  for (i = 0; i < x.length ;i++) {
-        text += x.elements[i].value + "<br>";
-    }
+   
   console.log(myData);
 }
+myObj = { 
+  "name": a,
+  "type": b,
+  "sex": c,
+  "hypoallergenic": d,
+  "trained": e,
+  "family": f,
+  "infertile": g,
+  "description": h};
+myJSON = JSON.stringify(myObj);
+localStorage.setItem("testJSON", myJSON);
+    console.log(myObj);
 </script>
 </body>
 </html>
