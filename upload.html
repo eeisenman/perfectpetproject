@@ -46,18 +46,18 @@
     <h2>Optional Information</h2>
     
     Hypoallergenic: <select id="allergies" name="hypoallergenic">
-      <option value="yes">Yes</option>
-      <option value="no">No</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
     </select><br>
       
     House-Trained: <select id="houseTrained" name="house-trained">
-      <option value="yes">Yes</option>
-      <option value="no">No</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
     </select><br>
       
     Family-Friendly: <select id="friendly" name="familyFriendly">
-      <option value="yes">Yes</option>
-      <option value="no">No</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
     </select><br>
       
     
@@ -89,11 +89,13 @@ function myFunction() {
   var a = document.getElementById("name").value;
   var b = document.getElementById("petTypes").value;
   var c = document.getElementById("gender").value;
-  var d = document.getElementById("allergies").value;
-  var e = document.getElementById("houseTrained").value;
-  var f = document.getElementById("friendly").value;
-  var g = document.getElementById("barren").value;
-  var h = document.getElementById("description").value;
+  var d = document.getElementById("barren").value;
+  var e = document.getElementById("age").value;
+  var f = document.getElementById("size").value;
+  var g = document.getElementById("allergies").value;
+  var h = document.getElementById("houseTrained").value;
+  var i = document.getElementById("friendly").value;
+  var j = document.getElementById("description").value;
   var text = "";
    
   console.log(myData);
@@ -101,12 +103,14 @@ function myFunction() {
 myObj = { 
   "name": a,
   "type": b,
-  "sex": c,
-  "hypoallergenic": d,
-  "trained": e,
-  "family": f,
-  "infertile": g,
-  "description": h};
+  "gender": c,
+  "infertile": d,
+  "age": e,
+  "size": f,
+  "hypoallergenic": g,
+  "trained": h,
+  "family": i,
+  "description": j};
 myJSON = JSON.stringify(myObj);
 localStorage.setItem("testJSON", myJSON);
     console.log(myObj);
