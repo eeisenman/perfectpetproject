@@ -24,15 +24,15 @@ var age = [
   "2 years old"];
 
 var breed = [
-  "unknown",
-  "mix",
+  "Chinese",
+  "Roborovski",
   "Syrian",
   "Campbell's Russian Dwarf", 
-  "Winter White Russian Dwarf Hamster",
+  "Winter White Russian Dwarf",
   "Chinese", 
   "Roborovski", 
-  "European", 
-  "Turkish"]; 
+  "Syrian", 
+  "Winter White Russian Dwarf"]; 
 
 var text = "<ul>";
 
@@ -49,26 +49,42 @@ var personality = [
   "playful, kid friendly",
   "cheeky, funny"]; 
 
+var photo = [ 
+  'chineseham1.jpg", 
+  "rham1.jpg",
+  "syrianham.jpg",
+  "rham1.jpg",
+  "winterwhiteham.jpg",
+  "chineseham2.jpg",
+  "rham2.jpg",
+  "syrianham3.jpg",
+  "winterwhiteham2.jpg"]; 
+
+var g = 0;
 var h = 0;
 var i = 0;
 var j= 0;
 var k= 0; 
 
+for (g = 0, h = 0, i=0, j=0, k=0; g < photo.length && h < nick.length && i < age.length && j < breed.length && k < personality.length ; g++, h++, i++, j++, k++){
+
 var randomGender = gender[Math.floor(Math.random() * gender.length)];
 var randomNeutered = neutered[Math.floor(Math.random() * neutered.length)];
-
-for (h = 0, i=0, j=0, k=0; h < name.length && i < age.length && j < breed.length && k < personality. length ; h++, i++, j++, k++){
-
   
-    text += "<li> Name: " + breed[h] + "</li>" +  "<br>" 
-            "<li>" randomGender "</li>" + "<br>"+
-            "<li> Age: " + age[i] + "</li>" + "<br>"+
-            "<li> Breed: " + breed[j] + "</li>" + "<br>"+
-            "<li>" + randomNeutered + "</li>" + "<br>"+
+    text += "<img src =\"" + photo[g] + "\" width:50% height: 50% />" + "<br>" +
+            "<li> Name: " + nick[h] + "</li>" +  "<br>" +
+            "<li>" + randomGender + " </li>" + "<br>" +
+            "<li> Age: " + age[i] + "</li>" + "<br>" +
+            "<li> Breed: " + breed[j] + "</li>" + "<br>" +
+            "<li>" + randomNeutered + "</li>" + "<br>" +
             "<li> Personality: " + personality[k] + "</li>" + "<br>";
 }   
- 
 text+= "</ul>";
 
+document.getElementById("dogData").innerHTML = text;
+
+
 console.log(text); 
+
+
 
