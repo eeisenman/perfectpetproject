@@ -94,6 +94,10 @@ myObj = {
 myJSON = JSON.stringify(myObj);
 localStorage.setItem("testJSON", myJSON);
     console.log(myObj);
+  
+text = localStorage.getItem("testJSON");
+obj = JSON.parse(text);
+  console.log(obj);
 }
 </script>
 </body>
