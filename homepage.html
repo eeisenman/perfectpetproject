@@ -51,6 +51,55 @@
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+<!--FOUNDERS-->
+  *, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
  <!--ACTUAL HTML-->  
   body {
   }
@@ -86,6 +135,10 @@ h2 {
   font-weight: bold;
   margin-bottom: 20px;
  }
+  h3 {
+    font-family: helvetica;
+    font-size: 24px;
+  }
   p {
     text-align:center;
     font-size: 10px;
@@ -129,7 +182,47 @@ h2 {
     
     
     <center><h2>Meet the Founders!</h2></center>
- 
+                                                  <br>
+     <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="" alt="Phuong" style="width:100%">
+      <div class="container">
+        <h3>Phuong Bao</h3>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="" alt="Erica" style="width:100%">
+      <div class="container">
+        <h3>Erica Eisenman</h3>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="" alt="Amy" style="width:100%">
+      <div class="container">
+       <h3>Amy Ho</h3>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="" alt="Ermani style="width:100%">
+      <div class="container">
+        <h3>Ermani Moore</h3>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+ <br>
       <p>©PerfectPetsProgram Inc. All Rights Reserved.</p>
     <script>
 var slideIndex = 0;
