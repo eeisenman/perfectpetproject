@@ -58,7 +58,7 @@ var photo = [
   "mainecat2.jpg",
   "americancat.jpg",
   "persiancat2.jpg", 
-  "bombaycat.jpg];
+  "bombaycat.jpg"];
   
 var g = 0;
 var h = 0;
