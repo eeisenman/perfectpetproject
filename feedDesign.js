@@ -1,5 +1,5 @@
 var data = localStorage.getItem("testJSON"); 
-obj = JSON.parse(text);
+var obj = JSON.parse(data);
 
 
 var text = "<ul>";
