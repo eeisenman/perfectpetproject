@@ -6,7 +6,7 @@ for pet in data:
              "<h2>" + petAge + "</h2>"+ 
              "<h2>" + petSize + "</h2>"+ 
              "<h2>" + extraOptions + "</h2>"+ 
-             "<img>" + petSize + "</img>";
+             "<img>" + image + "</img>";
 
 
       
