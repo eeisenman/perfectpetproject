@@ -119,11 +119,11 @@ text = localStorage.getItem("testJSON");
 obj = JSON.parse(text);
   console.log(obj);
   
-petArray.push(myObj);  
+text.push(myObj);  
     
-myJSON = JSON.stringify(petArray);
+myJSON = JSON.stringify(text);
 localStorage.setItem("testJSON", myJSON);
-    console.log(petArray);
+    console.log(text);
   
 text = localStorage.getItem("testJSON");
 obj = JSON.parse(text);
