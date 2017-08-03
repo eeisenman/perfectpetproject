@@ -5,7 +5,8 @@ var obj = JSON.parse(data);
 var text = "<ul>";
 
 for (i = 0; i < obj.length; i++) { 
-    text += "<p>" + obj[i] + "</p>" 
+    var pet = obj[i];
+    text += "<p>" + pet["petName"] + "</p>" 
 }
 
 text+= "</ul>";
