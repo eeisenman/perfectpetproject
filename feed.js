@@ -1,3 +1,4 @@
+var dummyData = 
 [
 
   {"petName" : "Bubbles", 
@@ -54,7 +55,7 @@
    "petType" : "Dog", 
    "petGender" : "Male", 
    "petNeuter" : "Yes", 
-   "petAge" : "Middle-aged",
+   "petAge" : "Old",
    "petSize" : "Large", 
    "extraOptions" : [], 
    "photo" : "lab.jpeg" 
@@ -85,7 +86,7 @@
    "petType" : "Dog", 
    "petGender" : "Male", 
    "petNeuter" : "Yes", 
-   "petAge" : "Middle-aged",
+   "petAge" : "Old",
    "petSize" : "Medium", 
    "extraOptions" : [], 
    "photo" : "beagle.jpeg" 
@@ -94,9 +95,9 @@
   {"petName" : "Briggy", 
    "petType" : "Cat", 
    "petGender" : "Male", 
-   "petNeuter" : "Yes", 
-   "petAge" : "Middle-aged",
-   "petSize" : "Medium", 
+   "petNeuter" : "No", 
+   "petAge" : "Young/Newborn",
+   "petSize" : "Small", 
    "extraOptions" : [], 
    "photo" : "unknowncat.jpg" 
   }
@@ -106,7 +107,7 @@
    "petGender" : "Male", 
    "petNeuter" : "Yes", 
    "petAge" : "Middle-aged",
-   "petSize" : "Medium", 
+   "petSize" : "Small", 
    "extraOptions" : [], 
    "photo" : "mainecat.jpg" 
   }
@@ -125,7 +126,7 @@
    "petType" : "Cat", 
    "petGender" : "Male", 
    "petNeuter" : "Yes", 
-   "petAge" : "Middle-aged",
+   "petAge" : "Large",
    "petSize" : "Medium", 
    "extraOptions" : [], 
    "photo" : "persiancat.jpg" 
@@ -135,7 +136,7 @@
    "petType" : "Cat", 
    "petGender" : "Male", 
    "petNeuter" : "Yes", 
-   "petAge" : "Middle-aged",
+   "petAge" : "Old",
    "petSize" : "Medium", 
    "extraOptions" : [], 
    "photo" : "britcat.jpg" 
@@ -143,9 +144,9 @@
 
   {"petName" : "Tiger", 
    "petType" : "Cat", 
-   "petGender" : "Male", 
+   "petGender" : "Female", 
    "petNeuter" : "Yes", 
-   "petAge" : "Middle-aged",
+   "petAge" : "Old",
    "petSize" : "Medium", 
    "extraOptions" : [], 
    "photo" : "mainecat2.jpg" 
@@ -153,9 +154,9 @@
 
   {"petName" : "Lucy", 
    "petType" : "Cat", 
-   "petGender" : "Male", 
+   "petGender" : "Female", 
    "petNeuter" : "Yes", 
-   "petAge" : "Middle-aged",
+   "petAge" : "Young/Newborn",
    "petSize" : "Medium", 
    "extraOptions" : [], 
    "photo" : "americancat.jpg" 
@@ -166,8 +167,8 @@
    "petType" : "Cat", 
    "petGender" : "Male", 
    "petNeuter" : "Yes", 
-   "petAge" : "Middle-aged",
-   "petSize" : "Medium", 
+   "petAge" : "Old",
+   "petSize" : "Large", 
    "extraOptions" : [], 
    "photo" : "persiancat2.jpg" 
   } 
@@ -183,7 +184,11 @@
   } 
   
   
+];
 
+
+var myJSON = JSON.stringify(dummyData);
+localStorage.setItem("testJSON", myJSON);
 
   
   
