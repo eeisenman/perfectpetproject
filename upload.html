@@ -99,8 +99,8 @@ function myFunction() {
   var j = document.getElementById("friendly").value;
   var k = document.getElementById("description").value;
   var text = "";
-   
-  console.log(myData);
+  
+var petArray = [a, b, c, d, e, f, g, h, , j]
 
 myObj = { 
   "name": a,
@@ -113,13 +113,19 @@ myObj = {
   "trained": h,
   "family": i,
   "description": j};
-myJSON = JSON.stringify(myObj);
-localStorage.setItem("testJSON", myJSON);
-    console.log(myObj);
   
 text = localStorage.getItem("testJSON");
 obj = JSON.parse(text);
   console.log(obj);
+  
+myObj.append(petArray);
+  consol.log(myObj);
+  
+    
+myJSON = JSON.stringify(myObj);
+localStorage.setItem("testJSON", myJSON);
+    console.log(myObj);
+  
 }
 </script>
 </body>
