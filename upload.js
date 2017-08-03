@@ -2,10 +2,14 @@
 <script type="text/javascript">
   
 var petUpload = {
-  "petName":,
-  "petType":
-  "petAge":,
-  "petDescription":,
+  "petName":"a",
+  "petType":"b",
+  "petSex":"c",
+  "hypoallergenic":"d",
+  "houseTrained":"e",
+  "familyFriendly":"f",
+  "spayedNeutered":"g",
+  "petDescription":"h",
 };
 
 alert (JSON.stringify(petUpload));
