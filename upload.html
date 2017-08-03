@@ -9,23 +9,42 @@
 <form action="upload.js">
   <fieldset>
     <legend>Pet Information</legend>
+   
+    <h2>This Information Must Be Completed</h2>
+    
     Pet Name:<br>
     <input id="name" type="text" name="petname"><br>
     
     Pet Type: <select id="petTypes" name="pets">
-      <option value="cat">Cat</option>
-      <option value="dog">Dog</option>
-      <option value="hamster">Hamster</option>
-      <option value="reptile">Reptile</option>
-      <option value="rabbbit">Rabbit</option>
-      <option value="other">Other</option>
+      <option value="Dog">Dog</option>  
+      <option value="Cat">Cat</option>
+      <option value="Rabbbit">Rabbit</option>
+      <option value="Hamster">Hamster</option>
+      <option value="Reptile">Reptile</option>
     </select><br>
 
     Sex: <select id="gender" name="sex">
-      <option value="male">Male</option>
-      <option value="female">Female</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
     </select><br>
       
+    Spayed/Neutered: <select id="barren" name="infertile">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select><br>
+    
+    Age Range: <select id="age" name="ageRange">
+      <option value="Young/Newborn">Young/Newborn</option>
+      <option value="Middle-Aged">Middle-Aged</option>
+      <option value="Old/Elderly">Old/Elderly</option>
+    
+    Size: <select id="size" name="Size">
+      <option value="Small/Toy">Small/Toy</option>
+      <option value="Medium">Medium</option>
+      <option value="Big/Large">Big/Large</option>
+    
+    <h2>Optional Information</h2>
+    
     Hypoallergenic: <select id="allergies" name="hypoallergenic">
       <option value="yes">Yes</option>
       <option value="no">No</option>
@@ -41,10 +60,7 @@
       <option value="no">No</option>
     </select><br>
       
-    Spayed/Neutered: <select id="barren" name="infertile">
-      <option value="yes">Yes</option>
-      <option value="no">No</option>
-    </select><br>
+    
                              
       
     <textarea id="description" name="message" rows="15" cols="100">Pet Description
