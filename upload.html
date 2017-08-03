@@ -115,10 +115,6 @@ myObj = {
   "family": j,
   "description": k};
   
-myJSON = JSON.stringify(petArray);
-localStorage.setItem("testJSON", myJSON);
-    console.log(petArray);
-  
 text = localStorage.getItem("testJSON");
 obj = JSON.parse(text);
   console.log(obj);
