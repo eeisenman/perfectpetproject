@@ -109,10 +109,11 @@ myObj = {
   "infertile": d,
   "age": e,
   "size": f,
-  "hypoallergenic": g,
-  "trained": h,
-  "family": i,
-  "description": j};
+  "breed": g,
+  "allergies": h,
+  "trained": i,
+  "family": j,
+  "description": k};
   
   
 text = localStorage.getItem("testJSON");
@@ -121,9 +122,9 @@ obj = JSON.parse(text);
   
 petArray.push(myFunction);  
     
-myJSON = JSON.stringify(myObj);
+myJSON = JSON.stringify(petArray);
 localStorage.setItem("testJSON", myJSON);
-    console.log(myObj);
+    console.log(petArray);
   
 }
 </script>
