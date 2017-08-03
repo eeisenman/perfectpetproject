@@ -1,10 +1,11 @@
 var data = localStorage.getItem("testJSON"); 
+obj = JSON.parse(text);
 
 
 var text = "<ul>";
 
-for (i = 0; i < data.length; i++) { 
-    text += "<p>" + data[i] + "</p>" 
+for (i = 0; i < obj.length; i++) { 
+    text += "<p>" + obj[i] + "</p>" 
 }
 
 text+= "</ul>";
