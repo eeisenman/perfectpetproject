@@ -24,8 +24,8 @@ var age = [
   "3 years old"];
 
 var species = [
-  "unknown",
-  "mix",
+  "Snake",
+  "Lizard",
   "Snake",
   "Turtle"
   "Lizard",
@@ -35,8 +35,6 @@ var species = [
   "Turtle"]; 
 
 var text = "<ul>";
-
-var neutered = ["neutered", "not neutered"] 
 
 var personality = [ 
   "fun, energetic", 
@@ -49,26 +47,31 @@ var personality = [
   "playful, kid friendly",
   "cheeky, funny"]; 
 
+var photo = [
+  
+var g = 0;
 var h = 0;
 var i = 0;
 var j= 0;
 var k= 0; 
 
+for (g = 0, h = 0, i=0, j=0, k=0; g < photo.length && h < nick.length && i < age.length && j < breed.length && k < personality.length ; g++, h++, i++, j++, k++){
+
 var randomGender = gender[Math.floor(Math.random() * gender.length)];
-var randomNeutered = neutered[Math.floor(Math.random() * neutered.length)];
-
-for (h = 0, i=0, j=0, k=0; h < name.length && i < age.length && j < breed.length && k < personality. length ; h++, i++, j++, k++){
-
   
-    text += "<li> Name: " + name[h] + "</li>" +  "<br>" 
-            "<li>" randomGender "</li>" + "<br>"
-            "<li> Age: " + age[i] + "</li>" + "<br>"
-            "<li> Species: " + species[j] + "</li>" + "<br>"
-            "<li>" + randomNeutered + "</li>" + "<br>"
+    text += "<img src =\"" + photo[g] + "\" width:50% height: 50% />" + "<br>" +
+            "<li> Name: " + nick[h] + "</li>" +  "<br>" +
+            "<li>" + randomGender + " </li>" + "<br>" +
+            "<li> Age: " + age[i] + "</li>" + "<br>" +
+            "<li> Species: " + species[j] + "</li>" + "<br>" +
             "<li> Personality: " + personality[k] + "</li>" + "<br>";
 }   
-
 text+= "</ul>";
 
+document.getElementById("dogData").innerHTML = text;
+
+
 console.log(text); 
+
+
 
