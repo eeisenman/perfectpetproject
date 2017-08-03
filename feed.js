@@ -187,10 +187,10 @@ var dummyData =
   
 ];
 
-var JSON = localStorage.getItem("testJSON"); 
+var data = localStorage.getItem("testJSON"); 
 
 
-if (JSON == null) { 
+if (data == null) { 
   var myJSON = JSON.stringify(dummyData);
   localStorage.setItem("testJSON", myJSON);
   alert(myJSON); 
