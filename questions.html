@@ -87,7 +87,7 @@
       var mediumcheckbox = document.getElementById("mediumcheckbox").value;
       var largecheckbox = document.getElementById("largecheckbox").value;
       
-      allPets = [
+    var allPets = [
  { 
    "petName" : "Arthur",
    "petType" : "dog",
@@ -105,6 +105,10 @@
    "petSize" : "small"
   }
 ];
+      var listlength = petlist.length;
+      for (var x = 0; x < listlength; x++) {
+        alert(petlist[x]);
+      }
       
       
       
