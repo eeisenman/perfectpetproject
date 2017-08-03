@@ -100,7 +100,7 @@ function myFunction() {
   var k = document.getElementById("description").value;
   var text = "";
   
-var petArray = [a, b, c, d, e, f, g, h, , j]
+var petArray = [myFunction];
 
 myObj = { 
   "name": a,
@@ -114,13 +114,12 @@ myObj = {
   "family": i,
   "description": j};
   
+  
 text = localStorage.getItem("testJSON");
 obj = JSON.parse(text);
   console.log(obj);
   
-myObj.append(petArray);
-  consol.log(myObj);
-  
+petArray.push(myFunction);  
     
 myJSON = JSON.stringify(myObj);
 localStorage.setItem("testJSON", myJSON);
