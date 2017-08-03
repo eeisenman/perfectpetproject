@@ -63,7 +63,6 @@ var dummyData =
    "photo" : "lab.jpeg" 
   },
 
-
   {"petName" : "Pumpkin", 
    "petType" : "Dog", 
    "petGender" : "Female", 
@@ -112,7 +111,7 @@ var dummyData =
    "petSize" : "Small", 
    "extraOptions" : [], 
    "photo" : "mainecat.jpg" 
-  }
+  },
   
   {"petName" : "Kai", 
    "petType" : "Cat", 
