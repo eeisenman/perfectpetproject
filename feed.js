@@ -183,9 +183,10 @@ var dummyData =
    "photo" : "bombaycat.jpg" 
   } 
   
-  
 ];
-
+      
+      
+      
 var data = localStorage.getItem("testJSON"); 
 
 
