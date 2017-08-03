@@ -1,14 +1,5 @@
 var data = localStorage.getItem("testJSON"); 
 
-for pet in data: 
-  var text = "<h2>" + petName + "</h2>" +
-             "<p>" + petType + "</p>"+ 
-             "<p>" + petGender + "</p>"+ 
-             "<p>" + petNeuter + "</p>"+ 
-             "<p>" + petAge + "</p>"+ 
-             "<p>" + petSize + "</p>"+ 
-             "<p>" + extraOptions + "</p>"+ 
-             "<img>" + image + "</img>";
 
 for (i = 0; i < data.length; i++) { 
     text += "<ul>" + "<h2>" + petName[i] + "<h2>" + "</ul>" + "<br>" + 
