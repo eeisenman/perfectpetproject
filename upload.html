@@ -69,11 +69,11 @@
  
     <h2>Contact Information</h2>
     Name:
-    <input type="text" name="oname"><br>
+    <input id="oName" type="text" name="name"><br>
     E-mail:
-    <input type="email" name="email"><br>
+    <input id="eMail" type="email" name="email"><br>
     Phone Number:
-    <input type="tel" name="telNum"><br>
+    <input id="numTel" type="tel" name="telNum"><br>
     
     <button type="submit" value="Submit" onclick="myFunction()">Submit</button>
     <a class="button" href="https://eeisenman.github.io/perfectpetproject/endpage.html">Continue</a>
@@ -96,9 +96,9 @@ function myFunction() {
   var i = document.getElementById("houseTrained").value;
   var j = document.getElementById("friendly").value;
   var k = document.getElementById("description").value;
-  var l = document.getElementById("oname").value;
-  var m = document.getElementById("email").value;
-  var n = document.getElementById("telNum").value;
+  var l = document.getElementById("oName").value;
+  var m = document.getElementById("eMail").value;
+  var n = document.getElementById("numTel").value;
   var text = "";
   
 var petArray = [];
