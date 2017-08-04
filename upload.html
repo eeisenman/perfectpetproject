@@ -8,9 +8,9 @@
   
 <form method="post">
   <fieldset>
-    <legend>Pet Information</legend>
+    <h2>Pet Information</h2>
    
-    <h2>This Information Must Be Completed</h2>
+    <h3>This Information Must Be Completed</h3>
     
     Pet Name:<br>
     <input id="name" type="text" name="petname"><br>
@@ -45,7 +45,7 @@
       <option value="Big/Large">Big/Large</option>
     </select><br>
     
-    <h2>Optional Information</h2>
+    <h4>Optional Information</h4>
     Pet Breed:<br>
     <input id="breed" type="text" name="petBreed"><br>
     
@@ -66,22 +66,19 @@
      
     <textarea id="description" name="message" rows="15" cols="100">Pet Description
     </textarea>
-    
-    <button type="submit" value="Submit" onclick="myFunction()">Submit</button>
-    <a class="button" href="https://eeisenman.github.io/perfectpendpage.html">Continue</a>
-    
-  </fieldset>
-    
-  <fieldset>
-    <legend>Contact Information</legend>
+ 
+    <h2>Contact Information</h2>
     Name:
-    <input type="text" name="name"><br>
+    <input type="text" name="oname"><br>
     E-mail:
     <input type="email" name="email"><br>
     Phone Number:
-    <input type="tel" name="usrtel"><br>
-    <input type="submit" value="Submit">
-    </fieldset>
+    <input type="tel" name="telNum"><br>
+    
+    <button type="submit" value="Submit" onclick="myFunction()">Submit</button>
+    <a class="button" href="https://eeisenman.github.io/perfectpet/endpage.html">Continue</a>
+    
+  </fieldset>
   
   </form>
   <script>
@@ -98,6 +95,9 @@ function myFunction() {
   var i = document.getElementById("houseTrained").value;
   var j = document.getElementById("friendly").value;
   var k = document.getElementById("description").value;
+  var l = document.getElementById("oname").value;
+  var m = document.getElementById("email").value;
+  var n = document.getElementById("telNum").value;
   var text = "";
   
 var petArray = [];
@@ -113,7 +113,10 @@ myObj = {
   "petAllergies": h,
   "petTrained": i,
   "petFriendly": j,
-  "petDescription": k};
+  "petDescription": k
+  "ownerName": l,
+  "ownerEmail": m,
+  "ownerTel": n};
   
 text = localStorage.getItem("testJSON");
 obj = JSON.parse(text);
