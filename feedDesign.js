@@ -7,7 +7,8 @@ var text = "<ul>";
 
 for (i = 0; i < obj.length; i++) { 
     var pet = obj[i];
-    text += "<p>" + pet["petName"] + "</p>" 
+    text += "<p>" + pet["petName"] + "</p>"
+    text += "<p>" + pet["petAge"] + "</p>
 }
 
 text+= "</ul>";
