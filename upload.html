@@ -7,6 +7,7 @@
       background-color: #008CBA;
       font-size: 12px;
       padding: 10px 24px;
+      font-family: "Courier New", Courier, monospace;
     }
         
     h1 {
@@ -14,14 +15,21 @@
       font-family: Courier, monospace;
     }
     
+    h2 {
+      font-family: Courier, monospace;
+    }
+    
+    h3 {
+      font-family: Courier, monospace;
+    }
+    
+    h4 {
+      font-family: Courier, monospace;
+    }
+    
     p {
       font-family: "Courier New", Courier, monospace;
     }
-        
-    
-      
-    
-      
     
   </style>
   
@@ -38,10 +46,10 @@
    
     <h3>This Information Must Be Completed</h3>
     
-    Pet Name:<br>
+    <p>Pet Name:</p><br>
     <input id="name" type="text" name="petname"><br>
     
-    Pet Type: <select id="petTypes" name="pets">
+    <p>Pet Type:</p><select id="petTypes" name="pets">
       <option value="Dog">Dog</option>  
       <option value="Cat">Cat</option>
       <option value="Rabbbit">Rabbit</option>
@@ -49,43 +57,43 @@
       <option value="Reptile">Reptile</option>
     </select><br>
 
-    Sex: <select id="gender" name="sex">
+    <p>Sex:</p><select id="gender" name="sex">
       <option value="Male">Male</option>
       <option value="Female">Female</option>
     </select><br>
       
-    Spayed/Neutered: <select id="barren" name="infertile">
+    <p>Spayed/Neutered:</p><select id="barren" name="infertile">
       <option value="Yes">Yes</option>
       <option value="No">No</option>
     </select><br>
     
-    Age Range: <select id="age" name="ageRange">
+    <p>Age Range:</p><select id="age" name="ageRange">
       <option value="Young/Newborn">Young/Newborn</option>
       <option value="Middle-Aged">Middle-Aged</option>
       <option value="Old/Elderly">Old/Elderly</option>
     </select><br>
     
-    Size: <select id="size" name="Size">
+    <p>Size:</p><select id="size" name="Size">
       <option value="Small/Toy">Small/Toy</option>
       <option value="Medium">Medium</option>
       <option value="Big/Large">Big/Large</option>
     </select><br>
     
     <h4>Optional Information</h4>
-    Pet Breed:<br>
+    <p>Pet Breed:</p><br>
     <input id="breed" type="text" name="petBreed"><br>
     
-    Hypoallergenic: <select id="allergies" name="hypoallergenic">
+    <p>Hypoallergenic:</p><select id="allergies" name="hypoallergenic">
       <option value="Yes">Yes</option>
       <option value="No">No</option>
     </select><br>
       
-    House-Trained: <select id="houseTrained" name="house-trained">
+    <p>House-Trained:</p><select id="houseTrained" name="house-trained">
       <option value="Yes">Yes</option>
       <option value="No">No</option>
     </select><br>
       
-    Family-Friendly: <select id="friendly" name="familyFriendly">
+    <p>Family-Friendly:</p><select id="friendly" name="familyFriendly">
       <option value="Yes">Yes</option>
       <option value="No">No</option>
     </select><br>
@@ -94,11 +102,11 @@
     </textarea><br>
  
     <h2>Contact Information</h2>
-    Name:
+    <p>Name:</p>
     <input id="oName" type="text" name="name"><br>
-    E-mail:
+    <p>E-mail:</p>
     <input id="eMail" type="email" name="email"><br>
-    Phone Number:
+    <p>Phone Number:</p>
     <input id="numTel" type="tel" name="telNum"><br>
     
     <button type="button" value="Submit" onclick="myFunction()">Submit</button>
