@@ -93,33 +93,36 @@
       alert(catcheckbox);
       
 text = localStorage.getItem("testJSON");
-      petlist = JSON.parse(text);
+petlist = JSON.parse(text);
       
-      var inputs = document.getElementsByTagName('input');
+var inputs = document.getElementsByTagName('input');
 
-        var listofCriteria = [];
+var listofCriteria = [];
       
-   for(var i = 0; i < inputs.length; i++) {var box = inputs[i];
-  if (box.checked == true) {
-    listofCriteria.push(box.value); 
-}}
-      var listlength = petlist.length;
-      var listofMatches = [];
-      for (var x = 0; x < listlength; x++) {
-        alert(petlist[x]);
-        var pet = petlist[x]; 
-      }
-     var y = pet["petGender"];
-      if (listofCriteria.indexOf(y) > -1) {
-        listofMatches.push(pet);
-      }
+for(var i = 0; i < inputs.length; i++) {
+    var box = inputs[i];
+    if (box.checked == true) {
+        listofCriteria.push(box.value); 
+    }
+}
+      
+var listlength = petlist.length;
+var listofMatches = [];
+
+for (var x = 0; x < listlength; x++) {
+    var pet = petlist[x];
+      
+    var y = pet["petGender"];
+     if (listofCriteria.indexOf(y) > -1) {
+      listofMatches.push(pet);
+     }
       
     else {
-      continue;
-    
-}
-      console.log(listofMatches):
+      continue;    
     }
+}
+console.log(listofMatches):
+}
       
 
    
