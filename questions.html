@@ -114,10 +114,31 @@ for (var x = 0; x < listlength; x++) {
       
     var y = pet["petGender"];
      if (listofCriteria.indexOf(y) > -1) {
-      listofMatches.push(pet);
+      listofMatches.push(pet); 
+         continue; 
      }
-      
-    else {
+  var y = pet["petType"];
+     if (listofCriteria.indexOf(y) > -1) {
+      listofMatches.push(pet);
+         continue;
+     }
+  var y = pet["petNeuter"];
+     if (listofCriteria.indexOf(y) > -1) {
+      listofMatches.push(pet);
+          continue;
+     }
+  var y = pet["petAge"];
+     if (listofCriteria.indexOf(y) > -1) {
+      listofMatches.push(pet);
+          continue;
+     }
+  var y = pet["petSizer"];
+     if (listofCriteria.indexOf(y) > -1) {
+      listofMatches.push(pet);
+          continue;
+     }
+  
+  else {
       continue;    
     }
 }
