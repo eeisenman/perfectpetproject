@@ -112,16 +112,18 @@ var listofMatches = [];
 for (var x = 0; x < listlength; x++) {
     var pet = petlist[x];
       
-    var y = pet["petGender"];
-     if (listofCriteria.indexOf(y) > -1) {
-      listofMatches.push(pet); 
-         continue; 
-     }
   var y = pet["petType"];
      if (listofCriteria.indexOf(y) > -1) {
       listofMatches.push(pet);
          continue;
      }
+       
+    var y = pet["petGender"];
+     if (listofCriteria.indexOf(y) > -1) {
+      listofMatches.push(pet); 
+         continue; 
+     }
+
   var y = pet["petNeuter"];
      if (listofCriteria.indexOf(y) > -1) {
       listofMatches.push(pet);
