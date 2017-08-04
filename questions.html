@@ -92,24 +92,9 @@
       alert(dogcheckbox);
       alert(catcheckbox);
       
-    var petlist = [
- { 
-   "petName" : "Arthur",
-   "petType" : "dog",
-   "petGender" : "female",
-   "petNeuter" : "no",
-   "petAge" : 4,
-   "petSize" : "small"
-  } , 
- { 
-   "petName" : "Candy",
-   "petType" : "dog",
-   "petGender" : "male",
-   "petNeuter" : "yes",
-   "petAge" : 10,
-   "petSize" : "small"
-  }
-];
+text = localStorage.getItem("testJSON");
+      petlist = JSON.parse(text);
+      
       var inputs = document.getElementsByTagName('input');
 
         var listofCriteria = [];
@@ -132,7 +117,9 @@
     else {
       continue;
     
-}}
+}
+      console.log(listofMatches):
+    }
       
 
    
