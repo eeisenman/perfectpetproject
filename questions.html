@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Find your pet!</title>
+    <link rel="icon" type="image/gif/png" href="icon.png">
+  </head>
 <body>
   
 <body style="font-family: courier;">
@@ -115,24 +119,29 @@ for (var x = 0; x < listlength; x++) {
   var y = pet["petType"];
      if (listofCriteria.indexOf(y) > -1) {
       listofMatches.push(pet);
+         continue;
      }
        
-    var y = listofMatches["petGender"];
+    var y = pet["petGender"];
      if (listofCriteria.indexOf(y) > -1) {
       listofMatches.push(pet); 
+         continue; 
      }
 
-  var y = listofMatches["petNeuter"];
+  var y = pet["petNeuter"];
      if (listofCriteria.indexOf(y) > -1) {
       listofMatches.push(pet);
+          continue;
      }
-  var y = listofMatches["petAge"];
+  var y = pet["petAge"];
      if (listofCriteria.indexOf(y) > -1) {
       listofMatches.push(pet);
+          continue;
      }
-  var y = listofMatches["petSize"];
+  var y = pet["petSizer"];
      if (listofCriteria.indexOf(y) > -1) {
       listofMatches.push(pet);
+          continue;
      }
   
   else {
