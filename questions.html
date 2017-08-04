@@ -115,29 +115,24 @@ for (var x = 0; x < listlength; x++) {
   var y = pet["petType"];
      if (listofCriteria.indexOf(y) > -1) {
       listofMatches.push(pet);
-         continue;
      }
        
-    var y = pet["petGender"];
+    var y = listofMatches["petGender"];
      if (listofCriteria.indexOf(y) > -1) {
       listofMatches.push(pet); 
-         continue; 
      }
 
-  var y = pet["petNeuter"];
+  var y = listofMatches["petNeuter"];
      if (listofCriteria.indexOf(y) > -1) {
       listofMatches.push(pet);
-          continue;
      }
-  var y = pet["petAge"];
+  var y = listofMatches["petAge"];
      if (listofCriteria.indexOf(y) > -1) {
       listofMatches.push(pet);
-          continue;
      }
-  var y = pet["petSizer"];
+  var y = listofMatches["petSize"];
      if (listofCriteria.indexOf(y) > -1) {
       listofMatches.push(pet);
-          continue;
      }
   
   else {
