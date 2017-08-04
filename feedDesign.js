@@ -12,7 +12,7 @@ for (i = 0; i < obj.length; i++) {
     text += "<p>" + pet["petAge"] + "</p>"
     text += "<p>" + pet["petSize"] + "</p>"
     text += "<p>" + pet["petNeuter"] + "</p>"
-    text += "<img src=" + photo + "/>"
+    text += "<img src=" + pet["photo"] + "/>"
 }
 
 text+= "</ul>";
