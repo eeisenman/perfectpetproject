@@ -114,27 +114,27 @@ var listlength = petlist.length;
 var listofMatches = [];
 
 for (var x = 0; x < listlength; x++) {
-    var pet = petlist[x];
+var pet = petlist[x];
       
-  var y = pet["petType"];
-     if (listofCriteria.indexOf(y) > -1) {
+var pettype = pet["petType"];
+     if (listofCriteria.indexOf(pettype) > -1) {
       listofMatches.push(pet);
      }
       /* 
-    var y = listofMatches["petGender"];
+var y = listofMatches["petGender"];
      if (listofCriteria.indexOf(y) == -1) {
       listofMatches.splice(pet); 
      }
 
-  var y = listofMatches["petNeuter"];
+var y = listofMatches["petNeuter"];
      if (listofCriteria.indexOf(y) == -1) {
       listofMatches.splice(pet);
      }
-  var y = listofMatches["petAge"];
+var y = listofMatches["petAge"];
      if (listofCriteria.indexOf(y) == -1) {
       listofMatches.splice(pet);
      }
-  var y = listofMatches["petSize"];
+var y = listofMatches["petSize"];
      if (listofCriteria.indexOf(y) == -1) {
       listofMatches.splice(pet);
      }
