@@ -119,7 +119,6 @@ for (var x = 0; x < listlength; x++) {
   var y = pet["petType"];
      if (listofCriteria.indexOf(y) > -1) {
       listofMatches.push(pet);
-         continue;
      }
       /* 
     var y = listofMatches["petGender"];
@@ -139,9 +138,7 @@ for (var x = 0; x < listlength; x++) {
      if (listofCriteria.indexOf(y) == -1) {
       listofMatches.splice(pet);
      }
-  */
-  else {
-      continue;    
+  */    
     }
 }
 console.log(listofMatches);
