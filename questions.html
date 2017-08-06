@@ -104,8 +104,8 @@ var inputs = document.getElementsByTagName('input');
 var listofCriteria = [];
       
 for(var i = 0; i < inputs.length; i++) {
-    var box = inputs[i];
-    if (box.checked == true) {
+  var box = inputs[i];
+  if (box.checked == true) {
         listofCriteria.push(box.value); 
     }
 }
@@ -114,7 +114,7 @@ var listlength = petlist.length;
 var listofMatches = [];
 
 for (var x = 0; x < listlength; x++) {
-var pet = petlist[x];
+  var pet = petlist[x];
       
 var pettype = pet["petType"];
      if (listofCriteria.indexOf(pettype) > -1) {
