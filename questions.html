@@ -127,23 +127,23 @@ for (var x = 0; x < listlength; x++) {
     }
     console.log(listofMatches);
   
-  console.log(petgender);
+//   console.log(petgender);
   
-    if (listofCriteria.indexOf(petgender) == -1) {
-    listofMatches.splice(listofMatches.indexOf(pet), 1); 
-    }
+//     if (listofCriteria.indexOf(petgender) == -1) {
+//     listofMatches.splice(listofMatches.indexOf(pet), 1); 
+//     }
   
-    else if (listofCriteria.indexOf(petneuter) == -1) {
-    listofMatches.splice(listofMatches.indexOf(pet), 1);
-    }
+//     else if (listofCriteria.indexOf(petneuter) == -1) {
+//     listofMatches.splice(listofMatches.indexOf(pet), 1);
+//     }
   
-    else if (listofCriteria.indexOf(petage) == -1) {
-    listofMatches.splice(listofMatches.indexOf(pet), 1);
-    }
+//     else if (listofCriteria.indexOf(petage) == -1) {
+//     listofMatches.splice(listofMatches.indexOf(pet), 1);
+//     }
   
-    else if (listofCriteria.indexOf(petsize) == -1) {
-    listofMatches.splice(listofMatches.indexOf(pet), 1);
-    }   
+//     else if (listofCriteria.indexOf(petsize) == -1) {
+//     listofMatches.splice(listofMatches.indexOf(pet), 1);
+//     }   
 }
 myJSON = JSON.stringify(listofMatches);
   localStorage.setItem("testMatches", myJSON);
