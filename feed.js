@@ -6,7 +6,7 @@ var dummyData =
    "petType" : "Dog", 
    "petGender" : "Female", 
    "petNeuter" : "Yes", 
-   "petAge" : "Young/Newborn",
+   "petAge" : "Middle-aged",
    "petSize" : "Medium", 
    "extraOptions" : [], 
    "photo" : "unknowndog.jpeg" 
@@ -46,8 +46,8 @@ var dummyData =
    "petType" : "Dog", 
    "petGender" : "Male", 
    "petNeuter" : "No", 
-   "petAge" : "Middle-aged",
-   "petSize" : "Large", 
+   "petAge" : "Young/Newborn",
+   "petSize" : "Small", 
    "extraOptions" : [], 
    "photo" : "husky.jpeg" 
   },
@@ -82,12 +82,12 @@ var dummyData =
    "photo" : "goldie.jpg" 
   },
 
-  {"petName" : "Fawn", 
+  {"petName" : "Peppa", 
    "petType" : "Dog", 
    "petGender" : "Male", 
-   "petNeuter" : "Yes", 
-   "petAge" : "Old",
-   "petSize" : "Medium", 
+   "petNeuter" : "No", 
+   "petAge" : "Young/Newborn",
+   "petSize" : "Small", 
    "extraOptions" : [], 
    "photo" : "beagle.jpeg" 
   },
@@ -126,7 +126,7 @@ var dummyData =
    "petType" : "Cat", 
    "petGender" : "Male", 
    "petNeuter" : "Yes", 
-   "petAge" : "Large",
+   "petAge" : "Old",
    "petSize" : "Medium", 
    "extraOptions" : [], 
    "photo" : "persiancat.jpg" 
