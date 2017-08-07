@@ -8,12 +8,12 @@ var text = "<ul>";
 for (i = 0; i < obj.length; i++) { 
     var pet = obj[i];
     text += "<img src=" + pet["photo"] + ">";
-    text += "<div id = \"info\"> <li><b>" + "Name: " + pet["petName"] + "</b></li><br>";
-    text += "<li>" + "Pet Gender: " + pet["petGender"] + "</li><br>";
-    text += "<li>" + "Pet Type: " + pet["petType"] + "</li><br>";
-    text += "<li>" + "Age: "+ pet["petAge"] + "</li><br>";
-    text += "<li>" + "Size: " + pet["petSize"] + "</li><br>";
-    text += "<li>" + "Neutered: " + pet["petNeuter"] + "</li></div>";
+    text += "<div id = \"info\"> <p>" + "Name: " + pet["petName"] + "</b><br>";
+    text += "Pet Gender: " + pet["petGender"] + "<br>";
+    text +=  "Pet Type: " + pet["petType"] + "<br>";
+    text += "Age: "+ pet["petAge"] + "<br>";
+    text += "Size: " + pet["petSize"] + "<br>";
+    text += "Neutered: " + pet["petNeuter"] + "</p></div>";
     
     
     
