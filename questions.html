@@ -150,6 +150,9 @@ for (var x = 0; x < listlength; x++) {
     listofMatches.splice(listofMatches.indexOf(pet), 1);
     }   
 }
+myJSON = JSON.stringify(listofMatches);
+  localStorage.setItem("testMatches", myJSON);
+      window.location = "https://eeisenman.github.io/perfectpetproject/feed.html";
 console.log(listofMatches);
     }
  
