@@ -119,28 +119,30 @@ for (var x = 0; x < listlength; x++) {
   var pet = petlist[x];
       
   var pettype = pet["petType"];
+  var petgender = listofMatches["petGender"];
+  var petneuter = listofMatches["petNeuter"];
+  var petage = listofMatches["petAge"];
+  var petsize = listofMatches["petSize"];
+  
     if (listofCriteria.indexOf(pettype) > -1) {
     listofMatches.push(pet);
     }
-      /* 
-  var y = listofMatches["petGender"];
-    if (listofCriteria.indexOf(y) == -1) {
-    listofMatches.splice(pet); 
+  
+    if (listofCriteria.indexOf(petgender) == -1) {
+    listofMatches.splice(listofMatches.indexOf(pet), 1); 
     }
-
-  var y = listofMatches["petNeuter"];
-    if (listofCriteria.indexOf(y) == -1) {
-    listofMatches.splice(pet);
+  
+    else if (listofCriteria.indexOf(petneuter) == -1) {
+    listofMatches.splice(listofMatches.indexOf(pet), 1);
     }
-  var y = listofMatches["petAge"];
-    if (listofCriteria.indexOf(y) == -1) {
-    listofMatches.splice(pet);
+  
+    else if (listofCriteria.indexOf(petage) == -1) {
+    listofMatches.splice(listofMatches.indexOf(pet), 1);
     }
-  var y = listofMatches["petSize"];
-    if (listofCriteria.indexOf(y) == -1) {
-    listofMatches.splice(pet);
-    }
-  */    
+  
+    else if (listofCriteria.indexOf(petsize) == -1) {
+    listofMatches.splice(listofMatches.indexOf(pet), 1);
+    }   
     }
 }
 console.log(listofMatches);
