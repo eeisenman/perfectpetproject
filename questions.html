@@ -138,9 +138,12 @@ petlist = JSON.parse(text);
 var inputs = document.getElementsByTagName('input');
 
 var listofCriteria = [];
+                                      
+                                      
       
 var listOfCBGroups = document.getElementsByClassName('petType petGender petNeuter petAge petSize');
-
+console.log(listofCBGroups);
+                                      
 for(var checkingCB = 0; checkingCB < 4; checkingCB++) {
     var checking = listOfCBGroups[checkingCB];
     var checkBoxes = checking.getElementsByTagName('input');
