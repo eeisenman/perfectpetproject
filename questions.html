@@ -139,13 +139,11 @@ var inputs = document.getElementsByTagName('input');
 
 var listofCriteria = [];
       
-var listOfCBGroups = [];
-      
-var checking = document.getElementsByClassName("petType", "petGender", "petNeuter", "petAge", "petSize");
+var listOfCBGroups = document.getElementsByClassName('petType petGender petNeuter petAge petSize');
 
 for(var checkingCB = 0; checkingCB < 4; checkingCB++) {
     var checking = listOfCBGroups[checkingCB];
-    var checkBoxes = CBgroup.getElementsByTagName('input');
+    var checkBoxes = checking.getElementsByTagName('input');
     for (check = 0; check < check.length; check++); 
     {
       var individualCB = check[checkboxes]; 
