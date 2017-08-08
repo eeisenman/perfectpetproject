@@ -142,10 +142,10 @@ var listofCriteria = [];
                                       
       
 var listOfCBGroups = document.getElementsByClassName('petType petGender petNeuter petAge petSize');
-console.log(listofCBGroups);
+console.log(listOfCBGroups);
                                       
 for(var checkingCB = 0; checkingCB < 4; checkingCB++) {
-    var checking = listOfCBGroups[checkingCB];
+    var checking = listOfCBGroups.item(checkingCB);
     var checkBoxes = checking.getElementsByTagName('input');
     for (check = 0; check < check.length; check++); 
     {
