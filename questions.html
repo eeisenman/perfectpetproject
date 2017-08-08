@@ -139,27 +139,27 @@ var inputs = document.getElementsByTagName('input');
 
 var listofCriteria = [];
       
-var listOfCBGroups = [];
+// var listOfCBGroups = [];
                                       
                                       
       
-listOfCBGroups.push(document.getElementsByClassName('petType'));
-listOfCBGroups.push(document.getElementsByClassName('petGender'));
-listOfCBGroups.push(document.getElementsByClassName('petNeuter'));     
-listOfCBGroups.push(document.getElementsByClassName('petAge'));      
-listOfCBGroups.push(document.getElementsByClassName('petSize'));      
+// listOfCBGroups.push(document.getElementsByClassName('petType'));
+// listOfCBGroups.push(document.getElementsByClassName('petGender'));
+// listOfCBGroups.push(document.getElementsByClassName('petNeuter'));     
+// listOfCBGroups.push(document.getElementsByClassName('petAge'));      
+// listOfCBGroups.push(document.getElementsByClassName('petSize'));      
      
-console.log(listOfCBGroups);
+// console.log(listOfCBGroups);
                                       
-for(var checkingCB = 0; checkingCB < 4; checkingCB++) {
-    var checking = listOfCBGroups[checkingCB][0];
-    var checkBoxes = checking.getElementsByTagName('input');
-    for (check = 0; check < checkBoxes.length; check++); 
-    {
-      var individualCB = checkBoxes[check]; 
-      if (individualCB.value == false) {
-         alert("Incomplete form. Please try again.");
-                                                                  }}}
+// for(var checkingCB = 0; checkingCB < 4; checkingCB++) {
+//     var checking = listOfCBGroups[checkingCB][0];
+//     var checkBoxes = checking.getElementsByTagName('input');
+//     for (check = 0; check < checkBoxes.length; check++); 
+//     {
+//       var individualCB = checkBoxes[check]; 
+//       if (individualCB.value == false) {
+//          alert("Incomplete form. Please try again.");
+//                                                                   }}}
    
 for(var i = 0; i < inputs.length; i++) {
   var box = inputs[i];
