@@ -4,11 +4,7 @@
     <title>Find your pet!</title>
     <link rel="icon" type="image/gif/png" href="icon.png">
     <style>
-      body {
-         border-width: 2px;
-         border-style: groove;
-         border-color: threedface;
-         border-image: initial;
+  body {
       }
       button, input {
       font-weight: bold;
@@ -32,15 +28,20 @@
       box-shadow: 0 4px #666;
       transform: translateY(4px);
     }
-      
-      
+    span {
+        border-width: 2px;
+         border-style: groove;
+         border-color: black;
+         border-image: initial;
+          margin: 10px;
+      }
       
     </style>
   </head>
 <body>
   
 <body style="font-family: courier;">
-
+<span>
 <p><h1><center>&#128062; The Purrfect Pet Questionnaire &#128062;</center></h1>
 
 <p><b>Check the boxes to select characteristics of your purrfect pet. You MUST check at least one box for each category. The more boxes you check, the greater the chance of finding 
@@ -104,7 +105,7 @@
   
   <input type="button" value="Back to Homepage" onclick="history.back()">
   </input>
-  
+  </span>
   </fieldset>
   
   </form>
