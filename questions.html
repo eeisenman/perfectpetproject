@@ -149,12 +149,12 @@ for (var x = 0; x < listlength; x++) {
   var petneuter = pet["petNeuter"];
   var petage = pet["petAge"];
   var petsize = pet["petSize"];
-  
     if (listofCriteria.indexOf(pettype) > -1 && (listofCriteria.indexOf(petgender) > -1) && (listofCriteria.indexOf(petneuter) > -1) && (listofCriteria.indexOf(petage) > -1) && (listofCriteria.indexOf(petsize) > -1) ) {
     listofMatches.push(pet);
-    } else { 
-      listofMatches.push(pet);
+    }
     console.log(listofMatches);
+  
+  
   
 //     if (listofCriteria.indexOf(petgender) == -1) {
 //     listofMatches.splice(listofMatches.indexOf(pet), 1); 
