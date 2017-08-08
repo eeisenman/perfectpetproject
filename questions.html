@@ -42,6 +42,7 @@
     
   <p1><b>Type of Pet:</b></p1>
     <form action="/action_page.php">
+      <div class = "petType"> 
     <input id= "dogcheckbox" type="checkbox" name="pet1" value="Dog">Dog
     <br>
     <input id= "catcheckbox"type="checkbox" name="pet2" value="Cat">Cat 
@@ -52,46 +53,56 @@
     <br>
     <input id= "reptilecheckbox"type="checkbox" name="pet5" value="Reptile">Reptile
     <br><br>
+      </div>
     </form> 
   
   <p2><b>Gender:</b></p2>
-
+    <div class = "petGender"> 
     <form action="/action_page.php">
     <input id= "malecheckbox" type="checkbox" name="gender1" value="Male">Male
     <br>
     <input id= "femalecheckbox" type="checkbox" name="gender2" value="Female">Female 
     <br><br>
+    </div> 
+      
     </form>
   
   <p3><b>Neuter:</b></p3>
   
   <form action="/action_page.php">
+    <div class = petNeuter">
     <input id= "neuteredcheckbox" type="checkbox" name="neutered1" value="Yes">Yes
     <br>
     <input id= "notneuteredcheckbox" type="checkbox" name="neutered2" value="No">No
     <br><br>
+    </div>
     </form>
   
   <p4><b>Age Range:</b></p4>
    
   <form action="/action_page.php">
+    <div class ="petAge"> 
     <input id= "newborncheckbox" type="checkbox" name="age1" value="Young/Newborn">Young/Newborn
     <br>
     <input id= "middlecheckbox" type="checkbox" name="age2" value="Middle-aged">Middle-Aged
     <br>
     <input id= "oldcheckbox" type="checkbox" name="age3" value="Old">Elderly/Old
     <br><br>
+      
+    </div> 
     </form>
   
   <p5><b>Size:</b></p5>
   
   <form action="/action_page.php">
+    <div class ="petSize">
     <input id= "smallcheckbox" type="checkbox" name="size1" value="Small">Small/Toy
     <br>
     <input id= "mediumcheckbox" type="checkbox" name="size2" value="Medium">Medium
     <br>
     <input id= "largecheckbox" type="checkbox" name="size3" value="Large">Big/Large
     <br><br><br>
+    </div>
     </form>
   
   <button type="button" onclick= "myFunction()">Submit</button>
@@ -128,6 +139,17 @@ var inputs = document.getElementsByTagName('input');
 
 var listofCriteria = [];
       
+var listOfCBGroups = [];
+      
+var checkingCB = document.getElementsByClassName("petType", "petGender", "petNeuter", "petAge", "petSize");
+      
+for(var checkingCB = 0; checkingCB < 4; checkCB++) {
+    for each checkbox in a group, check if there is at least one box checked 
+    if there isn't, 
+                                                                                                         then alert the user
+                                                                                                         
+                                                                                                         }
+                                                                                                         
 for(var i = 0; i < inputs.length; i++) {
   var box = inputs[i];
   if (box.checked == true) {
@@ -196,5 +218,6 @@ console.log(listofMatches);
     
     
   </script>
+
 </body>
 </html>
