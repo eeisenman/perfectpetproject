@@ -162,6 +162,7 @@ function myFunction() {
   var l = document.getElementById("oName").value;
   var m = document.getElementById("eMail").value;
   var n = document.getElementById("numTel").value;
+  var o = document.getElementById("fileinput").value;
   var text = "";
   
 var petArray = [];
@@ -180,7 +181,8 @@ myObj = {
   "petDescription": k,
   "ownerName": l,
   "ownerEmail": m,
-  "ownerTel": n};
+  "ownerTel": n
+  "petImage": o};
   
 text = localStorage.getItem("testJSON");
 obj = JSON.parse(text);
