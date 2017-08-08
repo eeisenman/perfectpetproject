@@ -107,37 +107,7 @@
     </select><br>
     <br>
     
-    <h4>Optional Information</h4>
-    <p>Pet Breed:</p>
-    <input id="breed" type="text" name="petBreed"><br>
     
-    <p>Hypoallergenic:</p><select id="allergies" name="hypoallergenic">
-      <option value="Yes">Yes</option>
-      <option value="No">No</option>
-    </select><br>
-      
-    <p>House-Trained:</p><select id="houseTrained" name="house-trained">
-      <option value="Yes">Yes</option>
-      <option value="No">No</option>
-    </select><br>
-      
-    <p>Family-Friendly:</p><select id="friendly" name="familyFriendly">
-      <option value="Yes">Yes</option>
-      <option value="No">No</option>
-    </select><br>
-    <br>
-     
-    <textarea id="description" name="message" rows="15" cols="100">Pet Description
-    </textarea><br>
- 
-    <h2>Contact Information</h2>
-    <p>Name:</p>
-    <input id="oName" type="text" name="name"><br>
-    <p>E-mail:</p>
-    <input id="eMail" type="email" name="email"><br>
-    <p>Phone Number:</p>
-    <input id="numTel" type="tel" name="telNum"><br>
-    <br>
     
     <button class="button" type="button" value="Submit" onclick="myFunction()">Submit</button>
     <a class="button" href="https://eeisenman.github.io/perfectpetproject/endpage.html">Continue</a>
@@ -154,14 +124,6 @@ function myFunction() {
   var d = document.getElementById("barren").value;
   var e = document.getElementById("age").value;
   var f = document.getElementById("size").value;
-  var g = document.getElementById("breed").value;
-  var h = document.getElementById("allergies").value;
-  var i = document.getElementById("houseTrained").value;
-  var j = document.getElementById("friendly").value;
-  var k = document.getElementById("description").value;
-  var l = document.getElementById("oName").value;
-  var m = document.getElementById("eMail").value;
-  var n = document.getElementById("numTel").value;
   var o = document.getElementById("fileinput").value;
   var text = "";
   
@@ -174,14 +136,6 @@ myObj = {
   "petNeuter": d,
   "petAge": e,
   "petSize": f,
-  "petBreed": g,
-  "petAllergies": h,
-  "petTrained": i,
-  "petFriendly": j,
-  "petDescription": k,
-  "ownerName": l,
-  "ownerEmail": m,
-  "ownerTel": n
   "photo": o};
   
 text = localStorage.getItem("testJSON");
