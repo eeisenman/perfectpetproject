@@ -7,21 +7,28 @@
   body {
       }
   button, input {
-         text-decoration: none;
-    display: inline-block;
-    font-family: courier;
-    background-color: white;
-    border: 2px solid black;
-    color: black;
-    padding: 15px 32px;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    transition-duration: 0.4s;
-}
-button, input :hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-      }
+      font-weight: bold;
+      background-color: white;
+      font-size: 16px;
+      padding: 12px 28px;
+      font-family: "Courier New", Courier, monospace;
+      color: black;
+      text-decoration: none;
+      border: 2px solid #555555;
+      cursor: pointer;
+      box-shadow: 0 4px #999;
+    }
+    
+    button, input:hover {
+      background-color: #e7e7e7;
+    }
+    
+    button, input:active {
+      background-color: #e7e7e7;
+      box-shadow: 0 4px #666;
+      transform: translateY(4px);
+    }
+          
     </style>
   </head>
 <body>
@@ -145,7 +152,8 @@ for (var x = 0; x < listlength; x++) {
   
     if (listofCriteria.indexOf(pettype) > -1 && (listofCriteria.indexOf(petgender) > -1) && (listofCriteria.indexOf(petneuter) > -1) && (listofCriteria.indexOf(petage) > -1) && (listofCriteria.indexOf(petsize) > -1) ) {
     listofMatches.push(pet);
-    }
+    } else { 
+      listofMatches.push(pet)
     console.log(listofMatches);
   
 //     if (listofCriteria.indexOf(petgender) == -1) {
