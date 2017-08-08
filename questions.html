@@ -138,14 +138,21 @@ petlist = JSON.parse(text);
 var inputs = document.getElementsByTagName('input');
 
 var listofCriteria = [];
+      
+var listOfCBGroups = [];
                                       
                                       
       
-var listOfCBGroups = document.getElementsByClassName('petType petGender petNeuter petAge petSize');
+listOfCBGroups.push(document.getElementsByClassName('petType'));
+listOfCBGroups.push(document.getElementsByClassName('petGender'));
+listOfCBGroups.push(document.getElementsByClassName('petNeuter'));     
+listOfCBGroups.push(document.getElementsByClassName('petAge'));      
+listOfCBGroups.push(document.getElementsByClassName('petSize'));      
+     
 console.log(listOfCBGroups);
                                       
 for(var checkingCB = 0; checkingCB < 4; checkingCB++) {
-    var checking = listOfCBGroups.item(checkingCB);
+    var checking = listOfCBGroups[checkingCB];
     var checkBoxes = checking.getElementsByTagName('input');
     for (check = 0; check < check.length; check++); 
     {
