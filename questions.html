@@ -142,14 +142,17 @@ var listofCriteria = [];
 var listOfCBGroups = [];
       
 var checkingCB = document.getElementsByClassName("petType", "petGender", "petNeuter", "petAge", "petSize");
-      
+
 for(var checkingCB = 0; checkingCB < 4; checkCB++) {
-    for each checkbox in a group, check if there is at least one box checked 
-    if there isn't, 
-                                                                                                         then alert the user
-                                                                                                         
-                                                                                                         }
-                                                                                                         
+    var CBgroup = listOfCBGroups [checkingCB];
+    var checkBoxes = CB.groups.getElementsByTagName('input');
+    for (check = 0; check < check.length; check++); 
+    {
+      var individualCB = check[checkboxes]; 
+      if (individualCB.value == false) {
+         alert("Incomplete form. Please try again.");
+                                                                  }}}
+   
 for(var i = 0; i < inputs.length; i++) {
   var box = inputs[i];
   if (box.checked == true) {
